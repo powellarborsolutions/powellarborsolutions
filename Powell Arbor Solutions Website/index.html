@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary SEO -->
+  <title>Tree Service in Grass Valley, CA | Powell Arbor Solutions</title>
+  <meta name="description" content="Powell Arbor Solutions provides professional tree removal, tree trimming, and 24/7 emergency tree service in Grass Valley, Auburn, Nevada City, and surrounding Nevada &amp; Placer County communities. ISA Certified Arborist David Powell. 20+ years of arborist experience. Free estimates." />
+  <meta name="keywords" content="tree service Grass Valley CA, tree removal Grass Valley, arborist Grass Valley, tree trimming Auburn CA, emergency tree service 24/7, ISA certified arborist Nevada County" />
+  <link rel="canonical" href="https://www.powellarborsolutions.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tree Service in Grass Valley, CA | Powell Arbor Solutions" />
+  <meta property="og:description" content="Professional tree removal, trimming &amp; 24/7 emergency service in Grass Valley, Auburn &amp; Nevada County. ISA Certified Arborist David Powell. 20+ years of arborist experience. Free estimates." />
+  <meta property="og:url" content="https://www.powellarborsolutions.com/" />
+  <meta property="og:image" content="https://www.powellarborsolutions.com/images/hero-bg.jpg" />
+  <meta property="og:image:width" content="1920" />
+  <meta property="og:image:height" content="1080" />
+  <meta property="og:site_name" content="Powell Arbor Solutions" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tree Service in Grass Valley, CA | Powell Arbor Solutions" />
+  <meta name="twitter:description" content="Professional tree removal, trimming &amp; 24/7 emergency service in Grass Valley &amp; Nevada County. ISA Certified Arborist." />
+  <meta name="twitter:image" content="https://www.powellarborsolutions.com/images/hero-bg.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Jobber estimate form styles -->
+  <link rel="stylesheet" href="https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css" media="screen" />
+
+  <!-- Page-level additions -->
+  <style>
+    /* ── Header logo ── */
+    .header-logo { display: flex; flex-direction: column; align-items: flex-start; margin-left: -6px; flex-shrink: 0; }
+    .header-logo img { height: 70px; width: auto; display: block; }
+    .header-logo span { font-size: 0.75rem; font-weight: 600; margin-top: 4px; color: #1B5E20; letter-spacing: 0.06em; text-transform: uppercase; }
+    .site-nav { padding: 10px 0; }
+    .nav-inner { max-height: none; height: auto; }
+    .container { padding-left: 1.5rem; padding-right: 1.5rem; }
+
+    /* ── Nav alignment ── */
+    .nav { display: flex; align-items: center; gap: 2rem; }
+    .nav-links { display: flex; align-items: center; gap: 1.5rem; }
+
+    /* ── Smooth scroll ── */
+    html { scroll-behavior: smooth; }
+
+    /* ── Hero text ── */
+    .no-wrap { white-space: nowrap; }
+
+    /* ── Estimate section (below hero) ── */
+    .estimate-section {
+      padding: 5rem 1.25rem;
+      background: var(--c-gray-100);
+      text-align: center;
+    }
+    .estimate-section h2 {
+      margin-bottom: 0.625rem;
+    }
+    .estimate-section > .container > p {
+      margin-bottom: 1.875rem;
+      color: var(--c-gray-500);
+      font-size: 1.0625rem;
+    }
+    .form-wrapper {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Mobile: Call Now above Estimate in hero CTA stack */
+    @media (max-width: 768px) {
+      .btn-call-hero { order: -1; }
+      .estimate-section { padding: 3rem 1.25rem; }
+    }
+
+    /* ── About grid ── */
+    .about-grid { grid-template-columns: 1fr 1fr !important; gap: 2rem !important; }
+    .about-photo-wrap img { border-radius: 12px; }
+
+    @media (max-width: 768px) {
+      .header-logo img { height: 50px; }
+      .about-grid { grid-template-columns: 1fr !important; }
+    }
+
+    /* ── What We Do paragraphs ── */
+    .what-we-do p { max-width: 900px; }
+
+    /* ── Project gallery (Swiper) ── */
+    .project-gallery { margin-top: 2.5rem; }
+    .project-gallery img { width: 100%; height: 360px; object-fit: cover; border-radius: 14px; display: block; }
+    .swiper-slide { height: auto; }
+
+    /* About / Trust section */
+    .about-section {
+      background: var(--c-white);
+      padding: var(--sp-xl) 0;
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 400px 1fr;
+      gap: var(--sp-xl);
+      align-items: center;
+    }
+    .about-photo-wrap {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+    .about-photo-wrap img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center top;
+      aspect-ratio: 3/4;
+    }
+    .about-content h2 { margin-bottom: 1rem; }
+    .about-content p {
+      color: var(--c-gray-600);
+      font-size: 1.0625rem;
+      margin-bottom: 1.25rem;
+    }
+
+    /* Gallery */
+    .gallery-section {
+      background: var(--c-gray-100);
+      padding: var(--sp-xl) 0;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.875rem;
+    }
+    .gallery-item {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: var(--c-gray-200);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.35s ease;
+    }
+    .gallery-item:hover img { transform: scale(1.04); }
+    .gallery-placeholder {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #dce8dc 0%, var(--c-gray-200) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.5rem;
+      color: var(--c-gray-400);
+    }
+    .gallery-placeholder svg { opacity: 0.45; }
+    .gallery-placeholder span {
+      font-family: var(--f-head);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 1024px) {
+      .about-grid { grid-template-columns: 1fr; }
+      .about-photo-wrap img { aspect-ratio: 16/9; object-position: center 20%; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── Financing trust badge ── */
+    .trust-badge {
+      display: inline-block;
+      padding: 0.35rem 0.85rem;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 999px;
+      font-family: var(--f-head);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.92);
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+    }
+    .hero-financing {
+      flex-basis: 100%;
+      display: flex;
+      align-items: center;
+      margin-top: -0.25rem;
+    }
+  </style>
+
+  <!-- ============================================================
+       SCHEMA MARKUP — LocalBusiness + Reviews
+       ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TreeService",
+    "name": "Powell Arbor Solutions",
+    "description": "Professional tree removal, tree trimming, and 24/7 emergency tree service in Grass Valley, Auburn, Nevada City, and surrounding Nevada and Placer County communities. ISA Certified Arborist David Powell. 20+ years of arborist experience.",
+    "url": "https://www.powellarborsolutions.com",
+    "telephone": "+15308891209",
+    "email": "info@powellarborsolutions.com",
+    "foundingDate": "2015",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Grass Valley",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.2196,
+      "longitude": -121.0608
+    },
+    "hasMap": "https://www.google.com/maps/place/Powell+Arbor+Solutions/data=!4m2!3m1!1s0x0:0x9e016b03ceca19ae?sa=X&ved=1t:2428&ictx=111",
+    "areaServed": [
+      { "@type": "City", "name": "Grass Valley", "addressRegion": "CA" },
+      { "@type": "City", "name": "Auburn", "addressRegion": "CA" },
+      { "@type": "City", "name": "Nevada City", "addressRegion": "CA" },
+      { "@type": "City", "name": "Penn Valley", "addressRegion": "CA" },
+      { "@type": "City", "name": "Alta Sierra", "addressRegion": "CA" },
+      { "@type": "City", "name": "Chicago Park", "addressRegion": "CA" },
+      { "@type": "City", "name": "Applegate", "addressRegion": "CA" }
+    ],
+    "openingHours": "Mo-Su 00:00-24:00",
+    "priceRange": "$$",
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "ISA Certified Arborist",
+        "credentialCategory": "Certification",
+        "recognizedBy": { "@type": "Organization", "name": "International Society of Arboriculture" },
+        "identifier": "WE-8944A"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "California Contractor's License",
+        "identifier": "999635"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "38",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Carol Davison" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "reviewBody": "So impressed! From the initial walk around the property with David Powell to check out our trees, we learned very quickly that he is extremely knowledgeable. He and his crew were very professional, arriving on time and working tirelessly to complete the job thoroughly and on time. We would highly recommend Powell Arbor Solutions."
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Paul Mcclintick" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "reviewBody": "I have used Powell Arbor Solutions at my home for about five years now, and I find David's company to be reliable, courteous, and very knowledgeable. Clean up is complete, thorough, and expertly thoughtful of the surrounding landscape."
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Organization", "name": "Urban Oaks Tree Service, LLC" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "reviewBody": "Working with Powell Arbor Solutions during the 2022 snowstorm crisis was a smooth and excellent process. One of the best companies I've worked with out of hundreds."
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Carl Hall" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "reviewBody": "David Powell and his crew finished taking down 20 dead and dying Ponderosa pines on our property. Steep terrain, limited access — they did a fantastic job at a reasonable price."
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Tim Fike" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "reviewBody": "David Powell provided a very fair quote for a hazard pine, requiring rigging to piece down, zero damage to the yard. Professional and friendly folks to work with."
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Ryan Goldsberry" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "reviewBody": "Amazing experience with David and his team. They are punctual, responsive and extremely thorough! I highly recommend them for any tree services needed."
+      }
+    ],
+    "sameAs": [
+      "https://www.google.com/maps/place/Powell+Arbor+Solutions/data=!4m2!3m1!1s0x0:0x9e016b03ceca19ae?sa=X&ved=1t:2428&ictx=111"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       ANNOUNCEMENT BAR
+       ============================================================ -->
+  <div class="announcement-bar" role="banner" aria-label="Emergency service notice">
+    <span class="pulse-dot" aria-hidden="true"></span>
+    24/7 Emergency Tree Service Available &mdash;
+    <a href="tel:+15308891209">Call (530) 889-1209</a> for immediate response
+  </div>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <header class="site-nav" role="banner">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main navigation">
+
+        <!-- Logo — logo-block, ONE instance only -->
+        <a href="/" aria-label="Powell Arbor Solutions — Home">
+          <div class="header-logo">
+            <img src="images/logo-new.png" alt="Powell Arbor Solutions Logo">
+            <span>ISA Certified Arborist</span>
+          </div>
+        </a>
+
+        <!-- Desktop Nav Links -->
+        <ul class="nav-links" role="list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/services/">Services</a></li>
+          <li><a href="/service-areas/">Service Areas</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+
+        <!-- Desktop CTA -->
+        <div class="nav-cta">
+          <a href="tel:+15308891209" class="btn btn-cta btn-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+            Call (530) 889-1209
+          </a>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <button class="nav-hamburger" id="mobileMenuBtn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileNavPanel">
+          <span></span><span></span><span></span>
+        </button>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true"></div>
+  <div class="mobile-nav-panel" id="mobileNavPanel" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <div class="mobile-nav-close">
+      <button id="mobileMenuClose" aria-label="Close navigation menu">&#x2715;</button>
+    </div>
+    <nav>
+      <ul class="mobile-nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/service-areas/">Service Areas</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+      <div class="mobile-nav-ctas">
+        <a href="tel:+15308891209" class="btn btn-cta btn-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+          Call (530) 889-1209
+        </a>
+        <a href="#estimate" class="btn btn-outline-green btn-lg">Get a Free Estimate</a>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+         Equipment photo background — machinery right, text left
+         ============================================================ -->
+    <section class="hero" aria-labelledby="hero-heading">
+
+      <!-- Equipment photo background -->
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <!-- Dark overlay for text readability -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+            <h1 id="hero-heading">
+              Tree Service in <span class="highlight no-wrap">Grass Valley, CA</span>
+            </h1>
+
+            <p class="hero-sub">
+              Professional tree trimming, tree removal, and 24/7 emergency tree service throughout Nevada and Placer Counties. Led by ISA Certified Arborist David Powell, Powell Arbor Solutions delivers safe, efficient results backed by 20+ years of experience.
+            </p>
+
+            <div class="hero-ctas">
+              <a href="#estimate" class="btn btn-cta btn-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3h10.5M6.75 3a2.25 2.25 0 00-2.25 2.25v15a2.25 2.25 0 002.25 2.25h10.5a2.25 2.25 0 002.25-2.25v-15A2.25 2.25 0 0017.25 3M9 7.5h6m-6 4h6m-6 4h3"/></svg>
+                Request a Free Estimate
+              </a>
+              <a href="tel:+15308891209" class="btn btn-outline-white btn-lg btn-call-hero">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+                Call Now
+              </a>
+              <div class="hero-financing">
+                <span class="trust-badge">🟢 Flexible Financing Available</span>
+              </div>
+            </div>
+
+            <div class="hero-trust" role="list" aria-label="Trust indicators">
+            <div class="trust-item" role="listitem">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/></svg>
+              Licensed &amp; Insured
+            </div>
+            <div class="trust-item" role="listitem">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"/></svg>
+              ISA Certified Arborist #WE-8944A
+            </div>
+            <div class="trust-item" role="listitem">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              20+ Years of Arborist Experience
+            </div>
+            <div class="trust-item" role="listitem">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 01-.75.75h-.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375"/></svg>
+              Free Estimates
+            </div>
+          </div><!-- /hero-trust -->
+
+        </div><!-- /hero-content -->
+      </div><!-- /container -->
+    </section>
+
+    <!-- ============================================================
+         TRUST BAR
+         ============================================================ -->
+    <div class="trust-bar" aria-label="Company credentials">
+      <div class="container">
+        <div class="trust-bar-grid">
+          <div class="trust-bar-item">
+            <div class="trust-bar-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/></svg>
+            </div>
+            <div class="trust-bar-text">
+              <strong>Fully Licensed &amp; Insured</strong>
+              <span>CA License #999635</span>
+            </div>
+          </div>
+          <div class="trust-bar-item">
+            <div class="trust-bar-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"/></svg>
+            </div>
+            <div class="trust-bar-text">
+              <strong>ISA Certified Arborist</strong>
+              <span>Credential #WE-8944A</span>
+            </div>
+          </div>
+          <div class="trust-bar-item">
+            <div class="trust-bar-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <div class="trust-bar-text">
+              <strong>Owner-Operated Local Business</strong>
+              <span>Serving Grass Valley &amp; Nevada County since 2015</span>
+            </div>
+          </div>
+          <div class="trust-bar-item">
+            <div class="trust-bar-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg>
+            </div>
+            <div class="trust-bar-text">
+              <strong>5.0 Rating on Google</strong>
+              <span>Based on 38+ Reviews</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         ABOUT / TRUST — David Powell portrait + credentials
+         ============================================================ -->
+    <section class="about-section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- Portrait -->
+          <div class="about-photo-wrap">
+            <img
+              src="images/david-powell-original.jpg"
+              alt="David Powell, ISA Certified Arborist and owner of Powell Arbor Solutions, Grass Valley CA"
+              loading="lazy"
+            />
+          </div>
+
+          <!-- Content -->
+          <div class="about-content">
+            <h2 id="about-heading">Meet David Powell</h2>
+            <h3>ISA Certified Arborist with 20+ Years of Local Experience</h3>
+            <p>
+              When you call Powell Arbor Solutions, you work directly with David Powell — a certified arborist who personally walks every property, evaluates each tree, and builds a plan that protects both your home and your landscape.
+            </p>
+            <p>
+              With decades of experience in the Sierra Nevada foothills, David understands how local trees respond to harsh winters, dry summers, and increasing wildfire risk. His goal isn't just to complete a job — it's to ensure your trees remain healthy while keeping your property safe.
+            </p>
+            <p>
+              Powell Arbor Solutions has proudly served Grass Valley, Auburn, Nevada City, and surrounding communities since 2015, built on a reputation for honest work, thorough cleanup, and results that speak for themselves.
+            </p>
+
+            <div class="why-credentials" role="list" aria-label="Credentials" style="margin-bottom:1.75rem;">
+              <span class="credential-tag" role="listitem">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                ISA Certified Arborist #WE-8944A
+              </span>
+              <span class="credential-tag" role="listitem">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                CA Contractor's License #999635
+              </span>
+              <span class="credential-tag" role="listitem">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                Free Property Walk &amp; Estimate
+              </span>
+            </div>
+
+            <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+              <a href="#estimate" class="btn btn-cta">Request a Free Estimate</a>
+              <a href="#gallery-heading" class="btn btn-outline-green">See Our Recent Work</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVICES — Tree Removal, Trimming, Emergency only
+         ============================================================ -->
+    <section class="section section--light" aria-labelledby="services-heading">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-label">What We Do</span>
+          <h2 id="services-heading">Tree Services in Grass Valley &amp; Surrounding Areas</h2>
+          <p>Nevada and Placer Counties are home to some of California's most beautiful — and most demanding — tree environments. Ponderosa pines, valley oaks, black oaks, and incense cedars define the region, but they also bring real challenges: storm damage, wildfire risk, root intrusion, and structural hazards near homes and property lines.</p>
+          <p>From mature oaks near residential foundations in Grass Valley, to creek-side removals in Auburn, to tight-lot properties in Nevada City with aging pine stands — Powell Arbor Solutions provides safe, professional tree care tailored to each property.</p>
+        </div>
+
+        <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-top: 2.5rem;">
+
+          <!-- Tree Removal -->
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
+            </div>
+            <h3>Tree Removal</h3>
+            <p>Safe, efficient removal of hazardous, dead, or unwanted trees. We handle steep terrain, limited access, and large-scale projects with precision rigging techniques that protect your property from start to finish.</p>
+            <a href="#estimate" class="service-link">
+              Learn more
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </a>
+          </article>
+
+          <!-- Tree Trimming & Pruning -->
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 3.75H6A2.25 2.25 0 003.75 6v1.5M16.5 3.75H18A2.25 2.25 0 0120.25 6v1.5m0 9V18A2.25 2.25 0 0118 20.25h-1.5m-9 0H6A2.25 2.25 0 013.75 18v-1.5M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <h3>Tree Trimming &amp; Pruning</h3>
+            <p>Expert pruning that promotes tree health, improves structure, reduces wildfire fuel load, and keeps your property looking its best. Thoughtful canopy management performed by a certified arborist, not just a chainsaw crew.</p>
+            <a href="#estimate" class="service-link">
+              Learn more
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </a>
+          </article>
+
+          <!-- Tree Planting & Installation -->
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-6m0 0l-3 3m3-3l3 3M4.5 10.5a7.5 7.5 0 1115 0c0 3-2 5.5-4.5 6.5m-6 0C6.5 16 4.5 13.5 4.5 10.5z"/></svg>
+            </div>
+            <h3>Tree Planting &amp; Installation</h3>
+            <p>Thoughtful selection and professional installation of the right tree for the right spot. We consider soil, exposure, mature size, and fire-wise spacing so your new trees thrive for decades in the foothills.</p>
+            <a href="#estimate" class="service-link">
+              Learn more
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </a>
+          </article>
+
+          <!-- Plant Health Care -->
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/></svg>
+            </div>
+            <h3>Plant Health Care</h3>
+            <p>Diagnosis and treatment of pests, disease, and decline in mature trees. Soil evaluation, pruning for vigor, and proactive care plans that extend the life of the valuable trees on your property.</p>
+            <a href="#estimate" class="service-link">
+              Learn more
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </a>
+          </article>
+
+          <!-- Defensible Space (Fire Prevention) -->
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003.001 2.48z M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z"/></svg>
+            </div>
+            <h3>Defensible Space (Fire Prevention)</h3>
+            <p>Cal Fire–aligned fuel reduction, ladder-fuel removal, and strategic canopy thinning to protect your home. We help Nevada and Placer County property owners meet defensible space requirements and insurance expectations.</p>
+            <a href="#estimate" class="service-link">
+              Learn more
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </a>
+          </article>
+
+          <!-- Arborist Reports & Consultations -->
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
+            </div>
+            <h3>Arborist Reports &amp; Consultations</h3>
+            <p>Written reports for permits, real estate transactions, insurance claims, HOA disputes, and pre-construction tree protection. Certified, defensible documentation from ISA Arborist David Powell (#WE-8944A).</p>
+            <a href="#estimate" class="service-link">
+              Learn more
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </a>
+          </article>
+
+          <!-- Storm Damage Cleanup -->
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z"/></svg>
+            </div>
+            <h3>Storm Damage Cleanup</h3>
+            <p>Fallen limbs, split trunks, and wind-thrown trees cleared quickly and safely. We coordinate with insurance when needed and fully clean the site — from the roof line down to the sawdust.</p>
+            <a href="#estimate" class="service-link">
+              Learn more
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </a>
+          </article>
+
+          <!-- Stump Grinding -->
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 01-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 11-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 016.336-4.486l-3.276 3.276a3.004 3.004 0 002.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852z"/></svg>
+            </div>
+            <h3>Stump Grinding &amp; Removal</h3>
+            <p>Stump grinding is the process of removing a tree stump below ground level using specialized grinding equipment to clear the area for safety, aesthetics, or future landscaping. Available upon request.</p>
+            <a href="#estimate" class="service-link">
+              Learn more
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </a>
+          </article>
+
+          <!-- Emergency Tree Service (24/7) -->
+          <article class="service-card service-card--emergency">
+            <div class="service-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"/></svg>
+            </div>
+            <h3>Emergency Tree Service (24/7)</h3>
+            <p>A tree down on your roof, blocking a road, or threatening your structure can't wait until Monday. David Powell and his crew are available around the clock for emergency response throughout Grass Valley, Auburn, and the surrounding foothills.</p>
+            <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1.25rem;">
+              <a href="tel:+15308891209" class="btn btn-cta btn-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+                Call Now — (530) 889-1209
+              </a>
+              <a href="#estimate" class="service-link" style="color:rgba(255,255,255,0.75); align-self:center;">
+                Learn more
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         WHY CHOOSE US
+         ============================================================ -->
+    <section class="section section--light" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Why Powell Arbor Solutions</span>
+          <h2 id="why-heading">Why Homeowners in Nevada County Choose Us</h2>
+        </div>
+
+        <ul style="list-style:none; margin:0 auto; padding:0; max-width:560px; display:flex; flex-direction:column; gap:1rem;">
+          <li style="display:flex; align-items:flex-start; gap:0.75rem; font-family:var(--f-head); font-size:1rem; font-weight:600; color:var(--c-charcoal);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" style="color:var(--c-green);flex-shrink:0;margin-top:2px;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Estimates scheduled within 24 hours
+          </li>
+          <li style="display:flex; align-items:flex-start; gap:0.75rem; font-family:var(--f-head); font-size:1rem; font-weight:600; color:var(--c-charcoal);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" style="color:var(--c-green);flex-shrink:0;margin-top:2px;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Clean, professional job sites — full debris removal
+          </li>
+          <li style="display:flex; align-items:flex-start; gap:0.75rem; font-family:var(--f-head); font-size:1rem; font-weight:600; color:var(--c-charcoal);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" style="color:var(--c-green);flex-shrink:0;margin-top:2px;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Safe, equipment-based solutions for difficult removals
+          </li>
+          <li style="display:flex; align-items:flex-start; gap:0.75rem; font-family:var(--f-head); font-size:1rem; font-weight:600; color:var(--c-charcoal);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" style="color:var(--c-green);flex-shrink:0;margin-top:2px;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Honest recommendations — no unnecessary upselling
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         GALLERY — Our Work
+         Add job site photos: climbing, rigging, removals, before/after
+         Replace each .gallery-placeholder div with an <img> tag
+         ============================================================ -->
+    <section class="gallery-section" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Our Work</span>
+          <h2 id="gallery-heading">Recent Projects in Nevada &amp; Placer Counties</h2>
+          <p>Every job is handled with the same attention to safety, precision, and complete site cleanup — no matter the size or complexity.</p>
+        </div>
+
+        <div class="swiper project-gallery">
+          <div class="swiper-wrapper">
+
+            <!-- Crane & Large Removal -->
+            <div class="swiper-slide"><img src="images/auburn-crane-emergency-tree-removal1.JPG" alt="Crane emergency tree removal in Auburn CA" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/auburn-crane-emergency-tree-removal2.JPG" alt="Crane tree removal operation Auburn CA" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/david-crane-storm-work.JPG" alt="David Powell operating crane during storm cleanup" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/crane-sky-view.jpg" alt="Crane sky view tree removal Nevada County" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/david-crane-ride-ground-view.jpg" alt="David Powell crane ride ground view" loading="lazy"></div>
+
+            <!-- Tree Removal -->
+            <div class="swiper-slide"><img src="images/tree-removal-topflop.jpg" alt="Tree removal top flop technique Grass Valley" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/tree-removal-rigging.jpg" alt="Professional tree removal rigging Nevada County" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/tree-removal-drop.jpg" alt="Controlled tree drop removal" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/tree-removal-inside-clients-home.jpg" alt="Tree removal view from client's home" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/dead-tree-removal.jpg" alt="Dead tree removal service Placer County" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/tree-removal-david.jpg" alt="David Powell performing tree removal" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/tree-removal-kayla.jpg" alt="Kayla on tree removal crew" loading="lazy"></div>
+
+            <!-- Storm Damage -->
+            <div class="swiper-slide"><img src="images/storm-damage.jpg" alt="Storm damage cleanup Sierra Nevada foothills" loading="lazy"></div>
+
+            <!-- Pruning -->
+            <div class="swiper-slide"><img src="images/tree-pruning-church-grass-valley.jpg" alt="Tree pruning at church in Grass Valley CA" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/tree-pruning-auburn-courthouse.jpg" alt="Tree pruning Auburn courthouse" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/tree-pruning-auburn-courthouse-night.jpg" alt="Tree pruning Auburn courthouse night" loading="lazy"></div>
+
+            <!-- Rope Systems / Technical -->
+            <div class="swiper-slide"><img src="images/rope-systems-david.jpg" alt="David Powell rope systems technical tree work" loading="lazy"></div>
+
+            <!-- Property / Lifestyle -->
+            <div class="swiper-slide"><img src="images/auburn-home-and-garden.jpg" alt="Tree service Auburn home and garden" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/nc-home-and-garden.jpg" alt="Tree service Nevada City home and garden" loading="lazy"></div>
+
+            <!-- Team -->
+            <div class="swiper-slide"><img src="images/kayla-david-team-climb.jpg" alt="Kayla and David Powell – Powell Arbor Solutions Team" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/kayla-david-team-work.jpg" alt="David and Kayla Powell Arbor Solutions team at work" loading="lazy"></div>
+
+            <!-- Equipment -->
+            <div class="swiper-slide"><img src="images/equipment-skid.jpg" alt="Powell Arbor Solutions skid steer equipment" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/equipment-skid-loading-chipper.jpg" alt="Equipment loading wood chipper Powell Arbor Solutions" loading="lazy"></div>
+
+            <!-- Plant Health Care -->
+            <div class="swiper-slide"><img src="images/phc-resistograph-1.jpg" alt="Plant health care resistograph tree assessment" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/phc-resistograph-2.jpg" alt="Resistograph assessment Nevada County arborist" loading="lazy"></div>
+
+            <!-- Supporting -->
+            <div class="swiper-slide"><img src="images/tree-work-ahead.jpg" alt="Tree work ahead Powell Arbor Solutions" loading="lazy"></div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         REVIEWS
+         ============================================================ -->
+    <section class="section section--white" aria-labelledby="reviews-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">What Clients Say</span>
+          <h2 id="reviews-heading">Trusted by Homeowners Across the Foothills</h2>
+          <p>Every review reflects a real job, a real property, and a crew that showed up and delivered.</p>
+        </div>
+
+        <div style="display:flex; align-items:center; justify-content:center; gap:0.75rem; margin-bottom:2.5rem;" aria-label="Overall rating: 5.0 stars from 38+ reviews">
+          <div class="review-stars" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+          </div>
+          <span style="font-family:var(--f-head); font-weight:700; font-size:1.125rem; color:var(--c-charcoal);">5.0</span>
+          <span style="color:var(--c-gray-500); font-size:0.9375rem;">Based on 38+ Google Reviews</span>
+        </div>
+
+        <div class="reviews-layout">
+
+          <blockquote class="review-featured">
+            <div class="review-stars" aria-label="5 out of 5 stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+            </div>
+            <p class="review-text">
+              "So impressed! <em>David Powell</em> is extremely knowledgeable — he explained a clear plan for <em>protecting our property from storm and wildfire damage.</em> His crew was professional, on time, and thorough. We would highly recommend Powell Arbor Solutions."
+            </p>
+            <footer class="review-author">
+              <div class="review-avatar" aria-hidden="true">CD</div>
+              <div class="review-author-info">
+                <strong>Carol Davison</strong>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238A11.91 11.91 0 0124 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303a12.04 12.04 0 01-4.087 5.571l.003-.002 6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>
+                  <span style="color:var(--c-green);font-weight:600;">Grass Valley, CA</span> &middot; Tree Care &amp; Trimming &middot; Verified Google Review
+                </span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <div class="reviews-secondary">
+            <blockquote class="review-card">
+              <div class="review-stars" aria-label="5 out of 5 stars">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+              </div>
+              <p class="review-text">"Reliable, courteous, and extremely knowledgeable. I've used Powell Arbor Solutions for five years — their cleanup is thorough and thoughtful of the surrounding landscape. By far the easiest review I've ever written."</p>
+              <footer class="review-author" style="margin-top:1rem;">
+                <div class="review-avatar" style="width:36px;height:36px;font-size:0.875rem;" aria-hidden="true">PM</div>
+                <div class="review-author-info">
+                  <strong>Paul Mcclintick</strong>
+                  <span><span style="color:var(--c-green);font-weight:600;">Grass Valley, CA</span> &middot; Tree Removal &amp; Trimming &middot; Verified Google Review</span>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="review-card">
+              <div class="review-stars" aria-label="5 out of 5 stars">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+              </div>
+              <p class="review-text">"Amazing experience with David and his team. They are punctual, responsive, and extremely thorough! I highly recommend them for any tree services needed."</p>
+              <footer class="review-author" style="margin-top:1rem;">
+                <div class="review-avatar" style="width:36px;height:36px;font-size:0.875rem;" aria-hidden="true">RG</div>
+                <div class="review-author-info">
+                  <strong>Ryan Goldsberry</strong>
+                  <span><span style="color:var(--c-green);font-weight:600;">Auburn, CA</span> &middot; Tree Services &middot; Verified Google Review</span>
+                </div>
+              </footer>
+            </blockquote>
+
+          </div>
+
+        </div>
+
+        <div style="text-align:center; margin-top:2.5rem;">
+          <a href="https://www.google.com/maps/place/Powell+Arbor+Solutions/data=!4m2!3m1!1s0x0:0x9e016b03ceca19ae?sa=X&ved=1t:2428&ictx=111" target="_blank" rel="noopener noreferrer" class="btn btn-outline-green" aria-label="Read more reviews on Google (opens in new tab)">
+            Read More Reviews on Google
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVICE AREAS
+         ============================================================ -->
+    <section class="section section--light" aria-labelledby="areas-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Where We Work</span>
+          <h2 id="areas-heading">Serving Grass Valley, Auburn &amp; Surrounding Communities</h2>
+          <p>Powell Arbor Solutions provides professional tree service throughout Nevada County, Placer County, and surrounding Sierra foothill and mountain communities.</p>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:1.25rem; max-width:780px; margin:0 auto;">
+          <div style="padding:1.25rem 1.5rem; background:var(--c-white); border-radius:var(--radius-md); border:1px solid var(--c-gray-200);">
+            <p style="font-family:var(--f-head); font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--c-green); margin:0 0 0.4rem;">Primary Areas</p>
+            <p style="margin:0; color:var(--c-charcoal); font-size:1rem; font-weight:500;">Alta Sierra, Grass Valley, Nevada City, Auburn, Colfax, Penn Valley</p>
+          </div>
+          <div style="padding:1.25rem 1.5rem; background:var(--c-white); border-radius:var(--radius-md); border:1px solid var(--c-gray-200);">
+            <p style="font-family:var(--f-head); font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--c-green); margin:0 0 0.4rem;">Surrounding Communities</p>
+            <p style="margin:0; color:var(--c-charcoal); font-size:1rem; font-weight:500;">Chicago Park, Christian Valley, Applegate, Meadow Vista, Lake of the Pines, Lake Wildwood, Rough and Ready, North San Juan</p>
+          </div>
+          <div style="padding:1.25rem 1.5rem; background:var(--c-white); border-radius:var(--radius-md); border:1px solid var(--c-gray-200);">
+            <p style="font-family:var(--f-head); font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--c-green); margin:0 0 0.4rem;">Extended Coverage</p>
+            <p style="margin:0; color:var(--c-charcoal); font-size:1rem; font-weight:500;">Granite Bay, Loomis, Rocklin, Roseville, Lincoln, and select Sierra mountain communities including Truckee and Soda Springs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FINAL CTA BANNER
+         ============================================================ -->
+    <section id="estimate" class="cta-banner" aria-labelledby="cta-heading">
+      <div class="container">
+        <span class="section-label section-label--light">Ready to Get Started?</span>
+        <h2 id="cta-heading">Request a Free Estimate from a Certified Arborist</h2>
+        <p>No pressure, no obligation. David Powell will walk your property, assess your trees, and give you a clear, honest plan — and a fair price.</p>
+        <div id="edcb9f2f-b704-42c3-84b8-97801f058419-4630388"></div>
+        <script async src="https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js"
+          clienthub_id="edcb9f2f-b704-42c3-84b8-97801f058419-4630388"
+          form_url="https://clienthub.getjobber.com/client_hubs/edcb9f2f-b704-42c3-84b8-97801f058419/public/work_request/embedded_work_request_form?form_id=4630388">
+        </script>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <img src="images/logo-new.png" alt="Powell Arbor Solutions" style="width:120px; height:auto; display:block; margin-bottom:1rem;" />
+          <p class="footer-brand-tagline">ISA Certified Arborist David Powell. Professional tree care rooted in knowledge, safety, and respect for the environment. Locally owned &amp; operated since 2015.</p>
+          <a href="tel:+15308891209" class="footer-phone" aria-label="Call Powell Arbor Solutions">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+            (530) 889-1209
+          </a>
+          <div style="color:rgba(255,255,255,0.5); font-size:0.8125rem; margin-top:0.25rem;">Available 24/7 for emergencies</div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="/services/">Tree Removal</a></li>
+            <li><a href="/services/">Tree Trimming &amp; Pruning</a></li>
+            <li><a href="/services/">Stump Grinding</a></li>
+            <li><a href="/services/">Tree Planting &amp; Installation</a></li>
+            <li><a href="/services/">Plant Health Care</a></li>
+            <li><a href="/services/">Defensible Space (Fire Prevention)</a></li>
+            <li><a href="/services/">Arborist Reports &amp; Consultations</a></li>
+            <li><a href="/services/">Storm Damage Cleanup</a></li>
+            <li><a href="/services/" class="emergency-link">Emergency Tree Service <span class="emergency-badge">24/7</span></a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Service Areas</h4>
+          <ul class="footer-links">
+            <li><a href="/service-areas/">Grass Valley</a></li>
+            <li><a href="/service-areas/">Auburn</a></li>
+            <li><a href="/service-areas/">Nevada City</a></li>
+            <li><a href="/service-areas/">Penn Valley</a></li>
+            <li><a href="/service-areas/">Alta S
