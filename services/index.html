@@ -671,6 +671,20 @@
     }, { passive: true });
   </script>
 
+<script>
+  document.querySelectorAll('.faq-trigger').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const panel = document.getElementById(btn.getAttribute('aria-controls'));
+      if (!panel) return;
+
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+      btn.setAttribute('aria-expanded', !isOpen);
+      panel.hidden = isOpen;
+    });
+  });
+</script>
+    
  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
