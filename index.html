@@ -939,14 +939,14 @@
   </main>
 
   <!-- ============================================================
-       FOOTER
+ FOOTER
        ============================================================ -->
   <footer class="site-footer" aria-label="Site footer">
     <div class="container">
       <div class="footer-grid">
 
         <div class="footer-brand">
-          <img src="images/logo-new.png" alt="Powell Arbor Solutions" style="width:120px; height:auto; display:block; margin-bottom:1rem;" />
+          <img src="../images/logo-new.png" alt="Powell Arbor Solutions" style="width:120px; height:auto; display:block; margin-bottom:1rem;" />
           <p class="footer-brand-tagline">ISA Certified Arborist David Powell. Professional tree care rooted in knowledge, safety, and respect for the environment. Locally owned &amp; operated since 2015.</p>
           <a href="tel:+15308891209" class="footer-phone" aria-label="Call Powell Arbor Solutions">
             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
@@ -977,4 +977,96 @@
             <li><a href="/service-areas/">Auburn</a></li>
             <li><a href="/service-areas/">Nevada City</a></li>
             <li><a href="/service-areas/">Penn Valley</a></li>
-            <li><a href="/service-areas/">Alta S
+            <li><a href="/service-areas/">Alta Sierra</a></li>
+            <li><a href="/service-areas/">Colfax</a></li>
+            <li><a href="/service-areas/">Meadow Vista</a></li>
+            <li><a href="/service-areas/">Chicago Park</a></li>
+            <li><a href="/service-areas/">Applegate</a></li>
+            <li><a href="/service-areas/">Lake of the Pines</a></li>
+            <li><a href="/service-areas/">Lake Wildwood</a></li>
+            <li><a href="/service-areas/">Truckee</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="/about/">About David Powell</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="https://www.google.com/maps/place/Powell+Arbor+Solutions/data=!4m2!3m1!1s0x0:0x9e016b03ceca19ae?sa=X&ved=1t:2428&ictx=111" target="_blank" rel="noopener noreferrer">Google Maps</a></li>
+          </ul>
+          <div style="margin-top:1.5rem;">
+            <div style="color:rgba(255,255,255,0.5); font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; font-family:var(--f-head); font-weight:700; margin-bottom:0.5rem;">Service Area</div>
+            <div style="color:rgba(255,255,255,0.65); font-size:0.875rem; line-height:1.6;">Grass Valley, CA<br>and surrounding Nevada &amp; Placer County communities</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Powell Arbor Solutions. All rights reserved.</p>
+        <div class="footer-licenses">
+          <span>CA Contractor's License #999635</span>
+          <span>ISA Certified Arborist #WE-8944A</span>
+          <span>Fully Insured</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky CTA -->
+  <div class="sticky-mobile-cta" aria-label="Quick action bar" role="complementary">
+    <div class="sticky-mobile-cta-inner">
+      <a href="tel:+15308891209" class="btn btn-cta" aria-label="Call Powell Arbor Solutions">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+        Call Now
+      </a>
+      <a href="#estimate" class="btn btn-green" aria-label="Get a free estimate">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3h10.5M6.75 3a2.25 2.25 0 00-2.25 2.25v15a2.25 2.25 0 002.25 2.25h10.5a2.25 2.25 0 002.25-2.25v-15A2.25 2.25 0 0017.25 3M9 7.5h6"/></svg>
+        Free Estimate
+      </a>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    const menuBtn   = document.getElementById('mobileMenuBtn');
+    const menuClose = document.getElementById('mobileMenuClose');
+    const navPanel  = document.getElementById('mobileNavPanel');
+    const overlay   = document.getElementById('mobileNavOverlay');
+
+    function openNav() {
+      navPanel.classList.add('open');
+      overlay.style.display = 'block';
+      document.body.style.overflow = 'hidden';
+      menuBtn.setAttribute('aria-expanded', 'true');
+      navPanel.removeAttribute('aria-hidden');
+    }
+    function closeNav() {
+      navPanel.classList.remove('open');
+      overlay.style.display = 'none';
+      document.body.style.overflow = '';
+      menuBtn.setAttribute('aria-expanded', 'false');
+      navPanel.setAttribute('aria-hidden', 'true');
+    }
+
+    menuBtn.addEventListener('click', openNav);
+    menuClose.addEventListener('click', closeNav);
+    overlay.addEventListener('click', closeNav);
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && navPanel.classList.contains('open')) closeNav();
+    });
+    navPanel.querySelectorAll('a').forEach(link => link.addEventListener('click', closeNav));
+
+    const siteNav = document.querySelector('.site-nav');
+    window.addEventListener('scroll', () => {
+      siteNav.style.boxShadow = window.scrollY > 10
+        ? '0 2px 16px rgba(0,0,0,0.1)'
+        : 'var(--shadow-sm)';
+    }, { passive: true });
+  </script>
+
+</body>
+</html>
