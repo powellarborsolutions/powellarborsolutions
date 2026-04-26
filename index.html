@@ -1099,14 +1099,25 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
+document.addEventListener('DOMContentLoaded', function () {
   const swiper = new Swiper('.project-gallery', {
     slidesPerView: 1,
     spaceBetween: 16,
     loop: true,
+
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true
+    },
+
+    grabCursor: true,
+
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
+
     breakpoints: {
       768: {
         slidesPerView: 2,
@@ -1116,7 +1127,7 @@
       }
     }
   });
+});
 </script>
-
 </body>
 </html>
