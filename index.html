@@ -1059,8 +1059,12 @@
   </div>
 </div>
 
-<!-- JavaScript -->
+<!-- =========================
+     JavaScript
+     ========================= -->
 <script>
+document.addEventListener('DOMContentLoaded', function () {
+
   // =========================
   // Safe year update
   // =========================
@@ -1078,17 +1082,17 @@
   const overlay = document.getElementById('mobileNavOverlay');
 
   function openNav() {
-    navPanel?.classList.add('active');
-    overlay?.classList.add('active');
+    navPanel.classList.add('active');
+    overlay.classList.add('active');
     document.body.style.overflow = 'hidden';
-    menuBtn?.setAttribute('aria-expanded', 'true');
+    menuBtn.setAttribute('aria-expanded', 'true');
   }
 
   function closeNav() {
-    navPanel?.classList.remove('active');
-    overlay?.classList.remove('active');
+    navPanel.classList.remove('active');
+    overlay.classList.remove('active');
     document.body.style.overflow = '';
-    menuBtn?.setAttribute('aria-expanded', 'false');
+    menuBtn.setAttribute('aria-expanded', 'false');
   }
 
   if (menuBtn && menuClose && navPanel && overlay) {
@@ -1096,13 +1100,13 @@
     menuClose.addEventListener('click', closeNav);
     overlay.addEventListener('click', closeNav);
 
-    document.addEventListener('keydown', e => {
+    document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') closeNav();
     });
 
-    navPanel.querySelectorAll('a').forEach(link =>
-      link.addEventListener('click', closeNav)
-    );
+    navPanel.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', closeNav);
+    });
   }
 
   // =========================
@@ -1110,12 +1114,14 @@
   // =========================
   const siteNav = document.querySelector('.site-nav');
   if (siteNav) {
-    window.addEventListener('scroll', () => {
+    window.addEventListener('scroll', function () {
       siteNav.style.boxShadow = window.scrollY > 10
         ? '0 2px 16px rgba(0,0,0,0.1)'
         : 'var(--shadow-sm)';
     }, { passive: true });
   }
+
+});
 </script>
 
 <!-- =========================
@@ -1144,12 +1150,8 @@ document.addEventListener('DOMContentLoaded', function () {
     },
 
     breakpoints: {
-      768: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      }
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 }
     }
   });
 });
