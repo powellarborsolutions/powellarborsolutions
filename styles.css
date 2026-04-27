@@ -1396,8 +1396,3 @@ footer {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
-
-/* TEMP: debug ghost spacing (REMOVE AFTER FIXING) */
-* {
-  outline: 0px solid red;
-}
