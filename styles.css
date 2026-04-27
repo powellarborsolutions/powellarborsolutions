@@ -1295,4 +1295,86 @@ p { max-width: 70ch; }
   font-weight: 600;
   text-align: center;
 }
-                                                                                                                                                                                                                                          
+
+/* ============================================================
+   MOBILE RESPONSIVENESS FIXES
+   ============================================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Global: prevent any element from causing horizontal scroll */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* ── 768px mobile fixes ── */
+@media (max-width: 768px) {
+
+  .site-nav {
+    height: auto !important;
+    min-height: var(--nav-h);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-bg {
+    background-position: center center;
+    transform: none;
+  }
+
+  .no-wrap {
+    white-space: normal;
+  }
+
+  .hero-content {
+    padding-bottom: 5rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  [id^="edcb9f2f"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  [id^="edcb9f2f"] iframe {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .cta-banner {
+    overflow: hidden;
+  }
+
+  .cta-banner .container {
+    overflow: hidden;
+  }
+
+  p, h1, h2, h3, h4 {
+    max-width: 100%;
+  }
+}
+
+/* ── 480px small phone fixes ── */
+@media (max-width: 480px) {
+
+  .header-logo img {
+    height: 36px !important;
+  }
+
+  .header-logo > span {
+    display: none;
+  }
+
+  .nav-hamburger {
+    display: flex !important;
+  }
+}
