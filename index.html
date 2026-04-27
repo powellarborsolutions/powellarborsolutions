@@ -1061,31 +1061,34 @@
 
 <!-- JavaScript -->
 <script>
-  // Safe year update (prevents crashes)
+  // =========================
+  // Safe year update
+  // =========================
   const yearEl = document.getElementById('currentYear');
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
 
-  const menuBtn   = document.getElementById('mobileMenuBtn');
+  // =========================
+  // Mobile Navigation
+  // =========================
+  const menuBtn = document.getElementById('mobileMenuBtn');
   const menuClose = document.getElementById('mobileMenuClose');
-  const navPanel  = document.getElementById('mobileNavPanel');
-  const overlay   = document.getElementById('mobileNavOverlay');
+  const navPanel = document.getElementById('mobileNavPanel');
+  const overlay = document.getElementById('mobileNavOverlay');
 
   function openNav() {
-    navPanel.classList.add('open');
-    overlay.style.display = 'block';
+    navPanel?.classList.add('active');
+    overlay?.classList.add('active');
     document.body.style.overflow = 'hidden';
-    menuBtn.setAttribute('aria-expanded', 'true');
-    navPanel.removeAttribute('aria-hidden');
+    menuBtn?.setAttribute('aria-expanded', 'true');
   }
 
   function closeNav() {
-    navPanel.classList.remove('open');
-    overlay.style.display = 'none';
+    navPanel?.classList.remove('active');
+    overlay?.classList.remove('active');
     document.body.style.overflow = '';
-    menuBtn.setAttribute('aria-expanded', 'false');
-    navPanel.setAttribute('aria-hidden', 'true');
+    menuBtn?.setAttribute('aria-expanded', 'false');
   }
 
   if (menuBtn && menuClose && navPanel && overlay) {
@@ -1094,7 +1097,7 @@
     overlay.addEventListener('click', closeNav);
 
     document.addEventListener('keydown', e => {
-      if (e.key === 'Escape' && navPanel.classList.contains('open')) closeNav();
+      if (e.key === 'Escape') closeNav();
     });
 
     navPanel.querySelectorAll('a').forEach(link =>
@@ -1102,6 +1105,9 @@
     );
   }
 
+  // =========================
+  // Scroll shadow effect
+  // =========================
   const siteNav = document.querySelector('.site-nav');
   if (siteNav) {
     window.addEventListener('scroll', () => {
@@ -1112,7 +1118,9 @@
   }
 </script>
 
-<!-- Swiper JS -->
+<!-- =========================
+     Swiper JS (Gallery)
+     ========================= -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
@@ -1146,5 +1154,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 </script>
+  
 </body>
 </html>
