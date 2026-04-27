@@ -1310,6 +1310,10 @@ html, body {
   max-width: 100%;
 }
 
+body {
+  overflow-y: auto;
+}
+
 /* ── 768px mobile fixes ── */
 @media (max-width: 768px) {
 
@@ -1377,4 +1381,23 @@ html, body {
   .nav-hamburger {
     display: flex !important;
   }
+}
+
+/* Prevent accidental extra bottom spacing */
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove overflow from last sections */
+section:last-child,
+footer {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* TEMP: debug ghost spacing (REMOVE AFTER FIXING) */
+* {
+  outline: 0px solid red;
 }
