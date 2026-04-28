@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1032,13 +1033,13 @@ document.addEventListener('DOMContentLoaded', function () {
   // =========================
   const yearEl = document.getElementById('currentYear');
   if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
+    Date().getFullYear();
   }
 
   // =========================
   // Mobile Navigation
   // =========================
-    const menuBtn   = document.getElementById('mobileMenuBtn');
+  const menuBtn   = document.getElementById('mobileMenuBtn');
   const menuClose = document.getElementById('mobileMenuClose');
   const navPanel  = document.getElementById('mobileNavPanel');
   const overlay   = document.getElementById('mobileNavOverlay');
@@ -1050,6 +1051,7 @@ document.addEventListener('DOMContentLoaded', function () {
     menuBtn.setAttribute('aria-expanded', 'true');
     navPanel.removeAttribute('aria-hidden');
   }
+
   function closeNav() {
     navPanel.classList.remove('active');
     overlay.classList.remove('active');
@@ -1057,13 +1059,17 @@ document.addEventListener('DOMContentLoaded', function () {
     menuBtn.setAttribute('aria-expanded', 'false');
     navPanel.setAttribute('aria-hidden', 'true');
   }
-  menuBtn.addEventListener('click', openNav);
-  menuClose.addEventListener('click', closeNav);
-  overlay.addEventListener('click', closeNav);
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape' && navPanel.classList.contains('active')) closeNav();
-  });
-  navPanel.querySelectorAll('a').forEach(link => link.addEventListener('click', closeNav));
+
+  if (menuBtn && menuClose && navPanel && overlay) {
+    menuBtn.addEventListener('click', openNav);
+    menuClose.addEventListener('click', closeNav);
+    overlay.addEventListener('click', closeNav);
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && navPanel.classList.contains('active')) closeNav();
+    });
+    navPanel.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', closeNav);
+    });
   }
 
   // =========================
@@ -1092,20 +1098,16 @@ document.addEventListener('DOMContentLoaded', function () {
     slidesPerView: 1,
     spaceBetween: 16,
     loop: true,
-
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
       pauseOnMouseEnter: true
     },
-
     grabCursor: true,
-
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
-
     breakpoints: {
       768: { slidesPerView: 2 },
       1024: { slidesPerView: 3 }
@@ -1113,6 +1115,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 </script>
-  
+
 </body>
 </html>
