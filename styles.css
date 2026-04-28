@@ -275,15 +275,17 @@ p { max-width: 70ch; }
 NAVIGATION BASE
 ============================================================ */
 
-.site-nav {
+site-nav {
   position: sticky;
   top: 0;
   z-index: 100;
   background: #fff;
-  height: 80px;
+  min-height: 80px;
+  height: auto;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #eee;
+  padding: 0.25rem 0;
 }
 
 .nav-inner {
