@@ -1291,8 +1291,9 @@ footer {
 @media (max-width: 768px) {
 
   .site-nav {
+     align-items: center;
     height: auto !important;
-    min-height: var(--nav-h);
+    min-height: 72px;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     flex-wrap: wrap;
@@ -1339,6 +1340,7 @@ footer {
   /* ===== NAV CENTER FIX ===== */
 
   .nav-inner {
+     align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
