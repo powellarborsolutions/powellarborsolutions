@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,6 +77,9 @@
     @media (max-width: 768px) {
       .header-logo img { height: 50px; }
       .page-hero { padding: 3rem 0 2.5rem; }
+      .nav-links { display: none !important; }
+      .nav-cta { display: none !important; }
+      .nav-hamburger { display: flex !important; }
     }
 
     /* ── FAQ Accordion ── */
@@ -660,15 +664,15 @@
     const overlay   = document.getElementById('mobileNavOverlay');
 
     function openNav() {
-      navPanel.classList.add('open');
-      overlay.style.display = 'block';
+      navPanel.classList.add('active');
+      overlay.classList.add('active');
       document.body.style.overflow = 'hidden';
       menuBtn.setAttribute('aria-expanded', 'true');
       navPanel.removeAttribute('aria-hidden');
     }
     function closeNav() {
-      navPanel.classList.remove('open');
-      overlay.style.display = 'none';
+      navPanel.classList.remove('active');
+      overlay.classList.remove('active');
       document.body.style.overflow = '';
       menuBtn.setAttribute('aria-expanded', 'false');
       navPanel.setAttribute('aria-hidden', 'true');
@@ -678,7 +682,7 @@
     menuClose.addEventListener('click', closeNav);
     overlay.addEventListener('click', closeNav);
     document.addEventListener('keydown', e => {
-      if (e.key === 'Escape' && navPanel.classList.contains('open')) closeNav();
+      if (e.key === 'Escape' && navPanel.classList.contains('active')) closeNav();
     });
     navPanel.querySelectorAll('a').forEach(link => link.addEventListener('click', closeNav));
 
