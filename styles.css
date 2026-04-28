@@ -1282,22 +1282,28 @@ MOBILE BREAKPOINT
     justify-content: center;
     align-items: center;
     position: relative;
+    padding: 0 3.5rem; /* reserve space on both sides so logo stays centered */
   }
 
   .nav-hamburger {
-    position: absolute;
-    right: 1rem;
+    position: absolute !important;
+    right: 1rem !important;
+    top: 50%;
+    transform: translateY(-50%);
+    flex-shrink: 0;
   }
 
   /* ── Mobile logo sizing + centering ── */
   .header-logo {
-    align-items: center;
+    align-items: center !important;
     text-align: center;
+    flex-shrink: 0 !important; /* never squish the logo */
   }
 
   .header-logo img {
-    height: 46px !important;
+    height: 56px !important;
     width: auto !important;
+    max-width: none !important;
   }
 
   .header-logo span {
@@ -1335,7 +1341,7 @@ MOBILE BREAKPOINT
 
 @media (max-width: 480px) {
   :root { --nav-h: 70px; }
-  .header-logo img { height: 38px !important; }
+  .header-logo img { height: 44px !important; }
 }
 
 @media (max-width: 420px) {
@@ -1446,7 +1452,6 @@ section:last-of-type {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
-
 /* Mobile: constrain height + hero overflow */
 @media (max-width: 768px) {
   html, body {
