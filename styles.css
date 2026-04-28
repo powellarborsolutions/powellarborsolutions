@@ -594,8 +594,13 @@ MOBILE BREAKPOINT
   position: relative;
   z-index: 2;
   max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
   color: var(--c-white);
   padding: var(--sp-xl) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hero-badge {
   display: inline-flex;
@@ -631,6 +636,25 @@ MOBILE BREAKPOINT
 .hero h1 .highlight {
   color: #86EFAC;
 }
+/* Stacked hero title — two block spans, each stays on its own line */
+.hero-title {
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+.hero-title span {
+  display: block;
+  white-space: nowrap;
+}
+.hero-title span.highlight {
+  color: #86EFAC;
+}
+/* Financing badge sits below CTA buttons as its own centered row */
+.hero-financing {
+  text-align: center;
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
+}
 .hero-sub {
   font-size: clamp(1rem, 2vw, 1.175rem);
   color: rgba(255,255,255,0.88);
@@ -643,12 +667,14 @@ MOBILE BREAKPOINT
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 2.25rem;
+  justify-content: center;
+  margin-bottom: 0.75rem;
 }
 .hero-trust {
   display: flex;
   flex-wrap: wrap;
   gap: 1.25rem;
+  justify-content: center;
 }
 .trust-item {
   display: flex;
