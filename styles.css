@@ -1464,9 +1464,13 @@ section:last-of-type {
   }
 
   .hero,
+  .hero-bg,
   .page-hero {
     min-height: 100svh;
     min-height: 100vh; /* fallback */
     overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 }
