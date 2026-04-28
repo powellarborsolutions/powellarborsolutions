@@ -292,12 +292,19 @@ p { max-width: 70ch; }
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
 .nav-links {
   display: flex;
-  gap: 20px;
+  gap: 24px;
   list-style: none;
+  margin-right: 10px;
+}
+
+.nav-cta {
+  margin-left: 10px;
+  white-space: nowrap;
 }
 
 .nav-links a {
