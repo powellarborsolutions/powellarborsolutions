@@ -1358,7 +1358,7 @@ footer {
   }
 
   .header-logo img {
-    height: 44px !important;
+    height: 52px !important;
     width: auto !important;
   }
 
@@ -1371,7 +1371,7 @@ footer {
 @media (max-width: 480px) {
 
   .header-logo img {
-    height: 36px !important;
+    height: 42px !important;
   }
 
   .header-logo span {
