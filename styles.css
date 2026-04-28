@@ -1463,14 +1463,40 @@ section:last-of-type {
     min-height: 100%;
   }
 
+  /* Homepage hero stays full-screen */
+  .hero {
+    min-height: 100svh !important;
+    min-height: 100vh !important; /* fallback */
+  }
+
+  /* Homepage hero bg + inner page hero bg: cover + center */
   .hero,
   .hero-bg,
   .page-hero {
-    min-height: 100svh;
-    min-height: 100vh; /* fallback */
-    overflow: hidden;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+  /* Inner page heroes: no full-screen height, just padded content block */
+  .page-hero {
+    min-height: auto !important;
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  /* Prevent flex centering from adding empty space on inner heroes */
+  .page-hero .container {
+    justify-content: flex-start;
+  }
+
+  /* Tighten inner hero text spacing */
+  .page-hero h1 {
+    margin-bottom: 10px;
+  }
+
+  .page-hero p {
+    margin-bottom: 12px;
   }
 }
