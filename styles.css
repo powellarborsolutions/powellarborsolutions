@@ -398,6 +398,55 @@ MOBILE NAV LINKS (FINAL CLEAN)
   border-radius: 8px;
 }
 
+.mobile-nav-close {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.25rem;
+}
+
+.mobile-nav-close button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--c-charcoal);
+  padding: 0.25rem 0.5rem;
+  line-height: 1;
+}
+
+.mobile-nav-ctas {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.mobile-nav-ctas .btn {
+  width: 100%;
+  justify-content: center;
+}
+
+/* btn-primary and btn-outline — used in mobile nav panel */
+.btn-primary {
+  background: var(--c-green);
+  color: var(--c-white);
+  border: 2px solid var(--c-green);
+}
+.btn-primary:hover {
+  background: var(--c-green-dark);
+  border-color: var(--c-green-dark);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--c-green);
+  border: 2px solid var(--c-green);
+}
+.btn-outline:hover {
+  background: var(--c-green);
+  color: var(--c-white);
+}
+
 /* ============================================================
 MOBILE BREAKPOINT
 ============================================================ */
