@@ -1238,7 +1238,7 @@ MOBILE BREAKPOINT
   box-sizing: border-box;
 }
 
-/* Global: prevent any element from causing horizontal scroll */
+/* Global: prevent horizontal scroll */
 html, body {
   overflow-x: hidden;
   max-width: 100%;
@@ -1246,9 +1246,48 @@ html, body {
 
 body {
   overflow-y: auto;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
-/* ── 768px mobile fixes ── */
+/* Remove overflow from last sections */
+section:last-child,
+footer {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* ============================================================
+   LOGO FIX (GLOBAL)
+   ============================================================ */
+
+.header-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.header-logo img {
+  height: 70px;
+  width: auto;
+  display: block;
+}
+
+.header-logo span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-top: 4px;
+  color: #1B5E20;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   MOBILE ≤ 768px
+   ============================================================ */
+
 @media (max-width: 768px) {
 
   .site-nav {
@@ -1284,14 +1323,11 @@ body {
   }
 
   [id^="edcb9f2f"] iframe {
-    max-width: 100% !important;
     width: 100% !important;
+    max-width: 100% !important;
   }
 
-  .cta-banner {
-    overflow: hidden;
-  }
-
+  .cta-banner,
   .cta-banner .container {
     overflow: hidden;
   }
@@ -1299,68 +1335,46 @@ body {
   p, h1, h2, h3, h4 {
     max-width: 100%;
   }
+
+  /* ===== NAV CENTER FIX ===== */
+
+  .nav-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .header-logo {
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .nav-hamburger {
+    position: absolute;
+    right: 1.25rem;
+    display: flex !important;
+  }
+
+  .header-logo img {
+    height: 44px !important;
+    width: auto !important;
+  }
+
 }
 
-/* ── 480px small phone fixes ── */
+/* ============================================================
+   SMALL PHONES ≤ 480px
+   ============================================================ */
+
 @media (max-width: 480px) {
 
   .header-logo img {
     height: 36px !important;
   }
 
-  .header-logo > span {
+  .header-logo span {
     display: none;
-  }
-
-  .nav-hamburger {
-    display: flex !important;
-  }
-}
-
-/* Prevent accidental extra bottom spacing */
-body {
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-
-/* Remove overflow from last sections */
-section:last-child,
-footer {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-/* ============================================================
-   LOGO FIX (PREVENT SQUISHING / DISAPPEARING ACROSS PAGES)
-   ============================================================ */
-
-.header-logo {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-shrink: 0;
-}
-
-.header-logo img {
-  height: 70px;
-  width: auto;
-  display: block;
-}
-
-.header-logo span {
-  font-size: 0.75rem;
-  font-weight: 600;
-  margin-top: 4px;
-  color: #1B5E20;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-/* Mobile adjustment */
-@media (max-width: 768px) {
-  .header-logo img {
-    height: 44px !important;
-    width: auto !important;
   }
 }
