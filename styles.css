@@ -1346,30 +1346,34 @@ footer {
     max-width: 100%;
   }
 
-  /* ===== NAV CENTER FIX ===== */
+  /* ===== NAV MOBILE LAYOUT ===== */
 
   .nav-inner {
-     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
+    padding: 0 0.25rem;
   }
 
   .header-logo {
     align-items: center;
     text-align: center;
-    margin: 0 auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
   }
 
   .nav-hamburger {
-    position: absolute;
-    right: 1.25rem;
+    position: relative;
+    right: auto;
+    flex-shrink: 0;
     display: flex !important;
+    margin-left: auto;
   }
 
   .header-logo img {
-    height: 52px !important;
+    height: 60px !important;
     width: auto !important;
   }
 
