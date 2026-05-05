@@ -59,7 +59,7 @@
    RESET & BASE
    ============================================================ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 16px; overflow-x: hidden; }
+html { scroll-behavior: smooth; font-size: 16px; }
 body {
   font-family: var(--f-body);
   background: var(--c-bg);
@@ -357,6 +357,8 @@ HAMBURGER
   background: none;
   border: none;
   cursor: pointer;
+  padding: 0.5rem;  /* enlarges touch target to ~41×38px */
+  margin: -0.5rem;  /* negative margin keeps visual position unchanged */
 }
 
 .nav-hamburger span {
@@ -647,7 +649,14 @@ MOBILE BREAKPOINT
 }
 .hero-title span {
   display: block;
-  white-space: nowrap;
+  white-space: nowrap; /* desktop: one line per span */
+}
+/* Small phones: let title lines wrap instead of clipping off-screen */
+@media (max-width: 480px) {
+  .hero-title span {
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
 }
 .hero-title span.highlight {
   color: #86EFAC;
@@ -1466,8 +1475,10 @@ MOBILE BREAKPOINT
    OVERFLOW / SCROLL FIXES
    ============================================================ */
 
-/* Prevent phantom horizontal scroll */
-html, body {
+/* Prevent phantom horizontal scroll — body only.
+   Do NOT set overflow-x: hidden on <html>: in WebKit/iOS Safari this makes
+   <body> the scroll container, which breaks position:fixed (mobile nav panel). */
+body {
   overflow-x: hidden;
 }
 
@@ -1483,7 +1494,7 @@ section:last-of-type {
 }
 /* Mobile: constrain height + hero overflow */
 @media (max-width: 768px) {
-  html, body {
+  body {
     overflow-x: hidden;
     height: auto;
   }
