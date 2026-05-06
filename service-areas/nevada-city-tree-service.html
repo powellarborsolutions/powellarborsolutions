@@ -445,8 +445,8 @@
         <h2>Get a Free Tree Service Quote in Nevada City</h2>
         <p>Tell us about your property and trees. We'll visit for a free on-site assessment and provide a clear written estimate.</p>
         <div class="form-wrapper">
-          <div id="edcb9f2f-b704-42c3-84b8-97801f058419-744187"></div>
-          <script async src="https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js" clienthub_id="edcb9f2f-b704-42c3-84b8-97801f058419-744187" form_url="https://clienthub.getjobber.com/client_hubs/edcb9f2f-b704-42c3-84b8-97801f058419/public/work_request/embedded_work_request_form?form_id=744187"></script>
+          <div id="edcb9f2f-b704-42c3-84b8-97801f058419-4630388"></div>
+          <script async src="https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js" clienthub_id="edcb9f2f-b704-42c3-84b8-97801f058419-4630388" form_url="https://clienthub.getjobber.com/client_hubs/edcb9f2f-b704-42c3-84b8-97801f058419/public/work_request/embedded_work_request_form?form_id=4630388"></script>
         </div>
       </div>
     </section>
@@ -633,6 +633,27 @@
           : 'var(--shadow-sm)';
       }, { passive: true });
     }
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var answer = this.nextElementSibling;
+        var isOpen = this.classList.contains('open');
+        // Close all open items
+        document.querySelectorAll('.faq-question.open').forEach(function(openBtn) {
+          openBtn.classList.remove('open');
+          openBtn.setAttribute('aria-expanded', 'false');
+          if (openBtn.nextElementSibling) openBtn.nextElementSibling.classList.remove('open');
+        });
+        // Open this one if it was closed
+        if (!isOpen) {
+          this.classList.add('open');
+          this.setAttribute('aria-expanded', 'true');
+          if (answer) answer.classList.add('open');
+        }
+      });
+    });
+
   </script>
 
 </body>
