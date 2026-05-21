@@ -591,8 +591,8 @@
             </div>
             <h3>Tree Planting &amp; Installation</h3>
             <p>Thoughtful selection and professional installation of the right tree for the right spot. We consider soil, exposure, mature size, and fire-wise spacing so your new trees thrive for decades in the foothills.</p>
-            <a href="#estimate" class="service-link">
-              Learn more
+            <a href="/services/" class="service-link">
+              View Service
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
             </a>
           </article>
@@ -604,8 +604,8 @@
             </div>
             <h3>Plant Health Care</h3>
             <p>Diagnosis and treatment of pests, disease, and decline in mature trees. Soil evaluation, pruning for vigor, and proactive care plans that extend the life of the valuable trees on your property.</p>
-            <a href="#estimate" class="service-link">
-              Learn more
+            <a href="/services/" class="service-link">
+              View Service
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
             </a>
           </article>
@@ -617,8 +617,8 @@
             </div>
             <h3>Defensible Space (Fire Prevention)</h3>
             <p>Cal Fire–aligned fuel reduction, ladder-fuel removal, and strategic canopy thinning to protect your home. We help Nevada and Placer County property owners meet defensible space requirements and insurance expectations.</p>
-            <a href="#estimate" class="service-link">
-              Learn more
+            <a href="/services/" class="service-link">
+              View Service
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
             </a>
           </article>
@@ -630,8 +630,8 @@
             </div>
             <h3>Arborist Reports &amp; Consultations</h3>
             <p>Written reports for permits, real estate transactions, insurance claims, HOA disputes, and pre-construction tree protection. Certified, defensible documentation from ISA Arborist David Powell (#WE-8944A).</p>
-            <a href="#estimate" class="service-link">
-              Learn more
+            <a href="/services/" class="service-link">
+              View Service
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
             </a>
           </article>
@@ -643,8 +643,8 @@
             </div>
             <h3>Storm Damage Cleanup</h3>
             <p>Fallen limbs, split trunks, and wind-thrown trees cleared quickly and safely. We coordinate with insurance when needed and fully clean the site — from the roof line down to the sawdust.</p>
-            <a href="#estimate" class="service-link">
-              Learn more
+            <a href="/services/" class="service-link">
+              View Service
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
             </a>
           </article>
@@ -656,8 +656,8 @@
             </div>
             <h3>Stump Grinding &amp; Removal</h3>
             <p>Stump grinding is the process of removing a tree stump below ground level using specialized grinding equipment to clear the area for safety, aesthetics, or future landscaping. Available upon request.</p>
-            <a href="#estimate" class="service-link">
-              Learn more
+            <a href="/services/" class="service-link">
+              View Service
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
             </a>
           </article>
@@ -1117,66 +1117,5 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
   
-</body>
-</html>
-      menuBtn.setAttribute('aria-expanded', 'false');
-      navPanel.setAttribute('aria-hidden', 'true');
-    }
-
-    if (menuBtn && menuClose && navPanel && overlay) {
-      menuBtn.addEventListener('click', openNav);
-      menuClose.addEventListener('click', closeNav);
-      overlay.addEventListener('click', closeNav);
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && navPanel.classList.contains('active')) closeNav();
-      });
-      navPanel.querySelectorAll('a').forEach(function (link) {
-        link.addEventListener('click', closeNav);
-      });
-    }
-
-    const siteNav = document.querySelector('.site-nav');
-    if (siteNav) {
-      window.addEventListener('scroll', function () {
-        siteNav.style.boxShadow = window.scrollY > 10
-          ? '0 2px 16px rgba(0,0,0,0.1)'
-          : 'var(--shadow-sm)';
-      }, { passive: true });
-    }
-  </script>
-
-<!-- =========================
-     Swiper JS (Gallery)
-     ========================= -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const swiper = new Swiper('.project-gallery', {
-    slidesPerView: 1,
-    spaceBetween: 16,
-    loop: true,
-
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-      pauseOnMouseEnter: true
-    },
-
-    grabCursor: true,
-
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-
-    breakpoints: {
-      768: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 }
-    }
-  });
-});
-</script>
-
 </body>
 </html>
