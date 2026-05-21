@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary SEO -->
+  <title>Tree Service Financing in Placer &amp; Nevada County | Powell Arbor Solutions</title>
+  <meta name="description" content="Financing available for tree removal, trimming, emergency tree service, defensible space, and other tree care projects throughout Placer and Nevada County." />
+  <link rel="canonical" href="https://www.powellarborsolutions.com/financing/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tree Service Financing in Placer &amp; Nevada County | Powell Arbor Solutions" />
+  <meta property="og:description" content="Financing available for tree removal, trimming, emergency tree service, and more throughout Placer and Nevada County. Check your options through Wisetack." />
+  <meta property="og:url" content="https://www.powellarborsolutions.com/financing/" />
+  <meta property="og:image" content="https://www.powellarborsolutions.com/images/hero-bg.jpg" />
+  <meta property="og:site_name" content="Powell Arbor Solutions" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tree Service Financing | Powell Arbor Solutions" />
+  <meta name="twitter:description" content="Flexible financing options for tree removal, trimming, and emergency tree service in Placer &amp; Nevada County. Check options through Wisetack." />
+  <meta name="twitter:image" content="https://www.powellarborsolutions.com/images/hero-bg.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../styles.css" />
+
+  <!-- Jobber Estimate Form Styles -->
+  <link rel="stylesheet" href="https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css" media="screen" />
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .container { padding-left: 1.5rem; padding-right: 1.5rem; }
+    .intro-prose p { color: var(--c-gray-600); font-size: 1.0625rem; margin-bottom: 1.25rem; max-width: 76ch; text-align: left; }
+
+    /* Projects grid */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 768px) {
+      .projects-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .projects-grid { grid-template-columns: 1fr; }
+    }
+    .project-card {
+      background: var(--c-white);
+      border: 1px solid var(--c-gray-200);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem 1.5rem;
+      transition: all 0.25s ease;
+    }
+    .project-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); border-color: transparent; }
+    .project-card-icon {
+      width: 48px; height: 48px;
+      background: var(--c-green-xlight);
+      border-radius: var(--radius-md);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--c-green); margin-bottom: 1rem;
+    }
+    .project-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+    .project-card p { font-size: 0.9rem; color: var(--c-gray-600); line-height: 1.6; margin-bottom: 1rem; }
+    .project-card a {
+      font-family: var(--f-head); font-weight: 700; font-size: 0.875rem;
+      color: var(--c-green); display: inline-flex; align-items: center; gap: 0.35rem;
+      transition: gap var(--transition);
+    }
+    .project-card a:hover { gap: 0.6rem; }
+
+    /* How it works steps */
+    .steps-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .step-item {
+      text-align: center;
+    }
+    .step-number {
+      width: 52px; height: 52px;
+      background: var(--c-green);
+      color: var(--c-white);
+      font-family: var(--f-head);
+      font-weight: 800;
+      font-size: 1.25rem;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1rem;
+    }
+    .step-item h3 { font-size: 1rem; margin-bottom: 0.5rem; color: var(--c-charcoal); }
+    .step-item p { font-size: 0.9rem; color: var(--c-gray-600); line-height: 1.6; }
+
+    /* Financing CTA section */
+    .financing-cta-section {
+      padding: 5rem 1.25rem;
+      background: var(--c-charcoal);
+      text-align: center;
+    }
+    .financing-cta-section .section-label { color: rgba(255,255,255,0.6); }
+    .financing-cta-section h2 { color: var(--c-white); margin-bottom: 0.75rem; }
+    .financing-cta-section .cta-desc { color: rgba(255,255,255,0.8); font-size: 1.0625rem; max-width: 560px; margin: 0 auto 2rem; }
+    .financing-cta-section .disclaimer { color: rgba(255,255,255,0.45); font-size: 0.8125rem; margin-top: 1.25rem; }
+
+    /* Internal links grid */
+    .link-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .link-card {
+      background: var(--c-white); border: 1px solid var(--c-gray-200); border-radius: var(--radius-md);
+      padding: 1.25rem 1.5rem; display: flex; align-items: center; gap: 0.75rem;
+      font-family: var(--f-head); font-weight: 700; font-size: 0.9375rem; color: var(--c-charcoal);
+      transition: all var(--transition);
+    }
+    .link-card svg { color: var(--c-green); flex-shrink: 0; }
+    .link-card:hover { border-color: var(--c-green); background: var(--c-green-xlight); color: var(--c-green-dark); transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+
+    @media (max-width: 768px) { .financing-cta-section { padding: 3rem 1.25rem; } }
+  </style>
+</head>
+<body>
+
+  <div class="announcement-bar" role="banner" aria-label="Emergency service notice">
+    <span class="pulse-dot" aria-hidden="true"></span>
+    24/7 Emergency Tree Service Available &mdash;
+    <a href="tel:+15308891209">Call (530) 889-1209</a> for immediate response
+  </div>
+
+  <header class="site-nav" role="banner">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main navigation">
+        <a href="/" aria-label="Powell Arbor Solutions — Home">
+          <div class="header-logo">
+            <img src="../images/logo-new.png" alt="Powell Arbor Solutions Logo">
+            <span>ISA Certified Arborist</span>
+          </div>
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/services/">Services</a></li>
+          <li><a href="/service-areas/">Service Areas</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a aria-current="page" href="/financing/">Financing</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="tel:+15308891209" class="btn btn-cta btn-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.5 2 2 0 0 1 3.6 1.32h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            (530) 889-1209
+          </a>
+        </div>
+        <button class="nav-hamburger" id="mobileMenuBtn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileNavPanel">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true"></div>
+  <div class="mobile-nav-panel" id="mobileNavPanel" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <div class="mobile-nav-close">
+      <button id="mobileMenuClose" aria-label="Close navigation menu">&#x2715;</button>
+    </div>
+    <nav>
+      <ul class="mobile-nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/service-areas/">Service Areas</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/financing/">Financing</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+      <div class="mobile-nav-ctas">
+        <a href="tel:+15308891209" class="btn btn-primary">Call (530) 889-1209</a>
+        <a href="/contact/" class="btn btn-outline">Get Free Estimate</a>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-labelledby="page-heading">
+      <div class="container">
+        <span class="section-label">Payment Flexibility</span>
+        <h1 id="page-heading">Financing Available for<br><span style="color:#86EFAC;">Tree Service Projects</span></h1>
+        <p>Flexible payment options for tree removal, trimming, emergency tree service, defensible space, and more throughout Placer &amp; Nevada County.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; margin-top:0.5rem;">
+          <a href="https://wisetack.us/#/v6xyxus/prequalify" target="_blank" rel="noopener" class="btn btn-cta btn-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z"/></svg>
+            Get Pre-Qualified
+          </a>
+          <a href="/contact/" class="btn btn-outline-white btn-lg">Get a Free Estimate</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="section section--white" aria-label="About tree service financing">
+      <div class="container">
+        <div style="max-width:820px; margin:0 auto; text-align:center;">
+          <span class="section-label">Don't Wait on Necessary Tree Work</span>
+          <h2 style="margin-bottom:1.25rem;">Tree Work Is Often Unexpected</h2>
+          <div class="intro-prose">
+            <p>A storm rolls through, a pine drops a limb on your fence, or your arborist flags a hazardous oak during a routine inspection — tree work doesn't always happen on a convenient timeline. Large removals, emergency response, and defensible space projects can add up quickly, especially on larger foothill properties with mature trees.</p>
+            <p>Financing can help you move forward with the work that needs to happen now, rather than deferring a hazard removal or pushing back critical fire season prep. Through our financing partner <strong>Wisetack</strong>, qualifying homeowners throughout Placer and Nevada County can check available options with no commitment required — and no impact to your credit score just for checking.</p>
+            <p>After you receive your estimate, we can help point you toward the pre-qualification link. Or check your options anytime — before your project, before your estimate, or whenever it's convenient.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section section--light" aria-label="How financing works">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Simple Process</span>
+          <h2>How It Works</h2>
+          <p>Checking your options is fast, simple, and doesn't commit you to anything.</p>
+        </div>
+        <div class="steps-list">
+          <div class="step-item">
+            <div class="step-number" aria-hidden="true">1</div>
+            <h3>Get Your Estimate</h3>
+            <p>David will walk your property, assess the work needed, and provide a written estimate — free, no pressure.</p>
+          </div>
+          <div class="step-item">
+            <div class="step-number" aria-hidden="true">2</div>
+            <h3>Check Your Options</h3>
+            <p>Visit the Wisetack pre-qualification link to see available financing options. Checking won't affect your credit score.</p>
+          </div>
+          <div class="step-item">
+            <div class="step-number" aria-hidden="true">3</div>
+            <h3>Choose What Works</h3>
+            <p>Review the available terms, select what fits your budget, and move forward when you're ready. No pressure.</p>
+          </div>
+          <div class="step-item">
+            <div class="step-number" aria-hidden="true">4</div>
+            <h3>Get the Work Done</h3>
+            <p>We complete your tree project efficiently and safely — the same quality work whether you're financing or paying out of pocket.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUALIFYING PROJECTS -->
+    <section class="section section--white" aria-label="Projects that may qualify for financing">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Covered Projects</span>
+          <h2>Projects That May Qualify</h2>
+          <p>Financing can be applied toward a wide range of tree care work — from routine maintenance to emergency response and fire prevention.</p>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126z"/></svg>
+            </div>
+            <h3>Tree Removal</h3>
+            <p>Dead, diseased, hazardous, or storm-damaged tree removal throughout Placer and Nevada County — including crane work for large trees near structures.</p>
+            <a href="/services/tree-removal.html">Learn about tree removal
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7.848 8.25l1.536.887M7.848 8.25a3 3 0 11-5.196-3 3 3 0 015.196 3zm1.536.887a2.165 2.165 0 011.083 1.839c.005.351.054.695.14 1.024M9.384 9.137l2.077 1.199M7.848 15.75l1.536-.887"/></svg>
+            </div>
+            <h3>Tree Trimming &amp; Pruning</h3>
+            <p>ANSI A300 compliant pruning for health, clearance, and aesthetics. Larger multi-tree projects are often good candidates for financing.</p>
+            <a href="/services/tree-trimming.html">Learn about trimming
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"/></svg>
+            </div>
+            <h3>Emergency Tree Service</h3>
+            <p>Storm damage cleanup, fallen tree removal, and hazardous limb response — financing can help manage unexpected emergency costs.</p>
+            <a href="/services/emergency-tree-service.html">Learn about emergency service
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z"/></svg>
+            </div>
+            <h3>Storm Damage Cleanup</h3>
+            <p>Comprehensive storm debris removal and follow-up tree work after high winds, snow loads, or severe weather events in Nevada and Placer County.</p>
+            <a href="/services/emergency-tree-service.html">Learn about storm cleanup
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"/></svg>
+            </div>
+            <h3>Defensible Space &amp; Fire Prevention</h3>
+            <p>Cal Fire Zone 1 &amp; Zone 2 compliant pruning, vegetation management, and ladder fuel reduction on properties throughout the High Fire Hazard Severity Zone.</p>
+            <a href="/services/">Learn about defensible space
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </a>
+          </div>
+
+          <div class="project-card" style="background:var(--c-charcoal); border-color:transparent;">
+            <div class="project-card-icon" style="background:rgba(255,255,255,0.1); color:#86EFAC;" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/></svg>
+            </div>
+            <h3 style="color:var(--c-white);">Large Hazard Tree Removal</h3>
+            <p style="color:rgba(255,255,255,0.75);">Complex removals of large-diameter pines, oaks, and cedars near homes, power lines, and structures — often the highest-cost projects and strong candidates for financing.</p>
+            <a href="/services/tree-removal.html" style="color:#86EFAC;">Learn about tree removal
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GET PRE-QUALIFIED CTA -->
+    <section class="financing-cta-section" aria-label="Get pre-qualified for tree service financing">
+      <div class="container">
+        <span class="section-label">Ready to Check Your Options?</span>
+        <h2>Get Pre-Qualified</h2>
+        <p class="cta-desc">Check available financing options for your upcoming tree project through Wisetack.</p>
+        <a href="https://wisetack.us/#/v6xyxus/prequalify" target="_blank" rel="noopener" class="btn btn-cta btn-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z"/></svg>
+          Get Pre-Qualified
+        </a>
+        <p class="disclaimer">Financing is subject to approval. Terms and conditions may vary.</p>
+      </div>
+    </section>
+
+    <!-- INTERNAL LINKS -->
+    <section class="section section--light" aria-label="Explore our services and service areas">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Explore More</span>
+          <h2>Services &amp; Service Areas</h2>
+          <p>Learn more about our tree care services or find your community in our service area.</p>
+        </div>
+        <div class="link-grid">
+          <a href="/services/tree-removal.html" class="link-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126z"/></svg>
+            Tree Removal
+          </a>
+          <a href="/services/tree-trimming.html" class="link-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 3.75H6A2.25 2.25 0 003.75 6v1.5M16.5 3.75H18A2.25 2.25 0 0120.25 6v1.5m0 9V18A2.25 2.25 0 0118 20.25h-1.5m-9 0H6A2.25 2.25 0 013.75 18v-1.5M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            Tree Trimming &amp; Pruning
+          </a>
+          <a href="/services/emergency-tree-service.html" class="link-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/></svg>
+            Emergency Tree Service
+          </a>
+          <a href="/contact/" class="link-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+            Contact &amp; Free Estimate
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../images/logo-new.png" alt="Powell Arbor Solutions" style="width:120px; height:auto; display:block; margin-bottom:1rem;" />
+          <p class="footer-brand-tagline">ISA Certified Arborist David Powell. Professional tree care rooted in knowledge, safety, and respect for the environment. Locally owned &amp; operated since 2015.</p>
+          <a href="tel:+15308891209" class="footer-phone" aria-label="Call Powell Arbor Solutions">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+            (530) 889-1209
+          </a>
+          <div style="color:rgba(255,255,255,0.5); font-size:0.8125rem; margin-top:0.25rem;">Available 24/7 for emergencies</div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="/services/tree-removal.html">Tree Removal</a></li>
+            <li><a href="/services/tree-trimming.html">Tree Trimming &amp; Pruning</a></li>
+            <li><a href="/services/">Stump Grinding</a></li>
+            <li><a href="/services/">Tree Planting &amp; Installation</a></li>
+            <li><a href="/services/">Plant Health Care</a></li>
+            <li><a href="/services/">Defensible Space (Fire Prevention)</a></li>
+            <li><a href="/services/">Arborist Reports &amp; Consultations</a></li>
+            <li><a href="/services/">Storm Damage Cleanup</a></li>
+            <li><a href="/services/emergency-tree-service.html" class="emergency-link">Emergency Tree Service <span class="emergency-badge">24/7</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Service Areas</h4>
+          <ul class="footer-links">
+            <li><a href="/service-areas/grass-valley-tree-service.html">Grass Valley</a></li>
+            <li><a href="/service-areas/auburn-tree-service.html">Auburn</a></li>
+            <li><a href="/service-areas/nevada-city-tree-service.html">Nevada City</a></li>
+            <li><a href="/service-areas/penn-valley-tree-service.html">Penn Valley</a></li>
+            <li><a href="/service-areas/alta-sierra-tree-service.html">Alta Sierra</a></li>
+            <li><a href="/service-areas/lake-of-the-pines-tree-service.html">Lake of the Pines</a></li>
+            <li><a href="/service-areas/lake-wildwood-tree-service.html">Lake Wildwood</a></li>
+            <li><a href="/service-areas/">Colfax</a></li>
+            <li><a href="/service-areas/">Meadow Vista</a></li>
+            <li><a href="/service-areas/">Chicago Park</a></li>
+            <li><a href="/service-areas/">Applegate</a></li>
+            <li><a href="/service-areas/">Truckee</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="/about/">About David Powell</a></li>
+            <li><a href="/financing/">Financing</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="https://www.google.com/maps/place/Powell+Arbor+Solutions/data=!4m2!3m1!1s0x0:0x9e016b03ceca19ae?sa=X&ved=1t:2428&ictx=111" target="_blank" rel="noopener noreferrer">Google Maps</a></li>
+          </ul>
+          <div style="margin-top:1.5rem;">
+            <div style="color:rgba(255,255,255,0.5); font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; font-family:var(--f-head); font-weight:700; margin-bottom:0.5rem;">Service Area</div>
+            <div style="color:rgba(255,255,255,0.65); font-size:0.875rem; line-height:1.6;">Grass Valley, CA<br>and surrounding Nevada &amp; Placer County communities</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Powell Arbor Solutions. All rights reserved.</p>
+        <div class="footer-licenses">
+          <span>CA Contractor's License #999635</span>
+          <span>ISA Certified Arborist #WE-8944A</span>
+          <span>Fully Insured</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky CTA -->
+  <div class="sticky-mobile-cta" aria-label="Quick action bar" role="complementary">
+    <div class="sticky-mobile-cta-inner">
+      <a href="tel:+15308891209" class="btn btn-cta" aria-label="Call Powell Arbor Solutions">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+        Call Now
+      </a>
+      <a href="https://wisetack.us/#/v6xyxus/prequalify" target="_blank" rel="noopener" class="btn btn-green" aria-label="Get pre-qualified for financing">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z"/></svg>
+        Get Pre-Qualified
+      </a>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    const menuBtn   = document.getElementById('mobileMenuBtn');
+    const menuClose = document.getElementById('mobileMenuClose');
+    const navPanel  = document.getElementById('mobileNavPanel');
+    const overlay   = document.getElementById('mobileNavOverlay');
+
+    function openNav() {
+      navPanel.classList.add('active');
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      menuBtn.setAttribute('aria-expanded', 'true');
+      navPanel.removeAttribute('aria-hidden');
+    }
+
+    function closeNav() {
+      navPanel.classList.remove('active');
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+      menuBtn.setAttribute('aria-expanded', 'false');
+      navPanel.setAttribute('aria-hidden', 'true');
+    }
+
+    if (menuBtn && menuClose && navPanel && overlay) {
+      menuBtn.addEventListener('click', openNav);
+      menuClose.addEventListener('click', closeNav);
+      overlay.addEventListener('click', closeNav);
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && navPanel.classList.contains('active')) closeNav();
+      });
+      navPanel.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', closeNav);
+      });
+    }
+
+    const siteNav = document.querySelector('.site-nav');
+    if (siteNav) {
+      window.addEventListener('scroll', function () {
+        siteNav.style.boxShadow = window.scrollY > 10
+          ? '0 2px 16px rgba(0,0,0,0.1)'
+          : 'var(--shadow-sm)';
+      }, { passive: true });
+    }
+  </script>
+
+</body>
+</html>
