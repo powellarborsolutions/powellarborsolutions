@@ -398,6 +398,250 @@
       </nav>
     </div>
 
+  <!-- ============================================================
+       AMERICAS 250 PROMO BANNER (homepage only — dismissible)
+       ============================================================ -->
+  <style>
+    /* ── Outer shell: white bg, red border, compact height ── */
+    .pb250-wrap {
+      padding: 5px 10px;
+      background: #fff;
+      border-top: 2px solid #b91c1c;
+      border-bottom: 2px solid #b91c1c;
+      position: relative;
+      z-index: 98;
+    }
+
+    /* ── Inner card: navy border, rounded, overflow hidden for accent clip ── */
+    .pb250-inner {
+      display: flex;
+      align-items: stretch;
+      max-width: 1260px;
+      margin: 0 auto;
+      border: 1.5px solid #1e3a5f;
+      border-radius: 10px;
+      overflow: hidden;
+      min-height: 54px;
+      /* Very faint star texture on banner background */
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44'%3E%3Cpolygon points='22,3.5 25.5,14 36.5,14 27.7,20.7 31.2,31 22,24.3 12.8,31 16.3,20.7 7.5,14 18.5,14' fill='%231e3a5f' opacity='.055'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 44px 44px;
+      background-color: #fff;
+    }
+
+    /* ── Left patriotic accent — CSS-rendered American flag slice ── */
+    .pb250-accent {
+      position: relative;
+      /* 13 alternating red/white flag stripes */
+      background: repeating-linear-gradient(
+        to bottom,
+        #B22234 0%,    #B22234 7.69%,
+        #fff    7.69%, #fff    15.38%
+      );
+      clip-path: polygon(0 0, 100% 0, 76% 100%, 0 100%);
+      width: 112px;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+    /* Blue canton with small star pattern over top-left stripes */
+    .pb250-accent::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 68%;
+      height: 53.85%; /* 7 of 13 stripes = canton height */
+      background-color: #3C3B6E;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='11'%3E%3Cpolygon points='7,1 8.3,4.1 11.9,4.1 9,6.4 10.1,9.9 7,7.7 3.9,9.9 5,6.4 2.1,4.1 5.7,4.1' fill='white' opacity='.78'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 14px 11px;
+      background-position: 2px 1px;
+    }
+    /* Soft right-edge fade blending flag into banner */
+    .pb250-accent::after {
+      content: '';
+      position: absolute;
+      top: 0; right: 0; bottom: 0;
+      width: 38%;
+      background: linear-gradient(to right, transparent, rgba(255,255,255,0.88));
+      pointer-events: none;
+    }
+
+    /* ── Center content ── */
+    .pb250-center {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0.4rem 1rem;
+      text-align: center;
+    }
+    .pb250-headline {
+      font-family: var(--f-head);
+      font-size: clamp(0.8rem, 1.75vw, 1.125rem);
+      font-weight: 800;
+      letter-spacing: 0.055em;
+      text-transform: uppercase;
+      line-height: 1.1;
+      white-space: nowrap;
+    }
+    .pb250-red  { color: #b91c1c; }
+    .pb250-navy { color: #1e3a5f; }
+    .pb250-subtext {
+      font-family: var(--f-head);
+      font-size: clamp(0.58rem, 1.05vw, 0.7rem);
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #374151;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      white-space: nowrap;
+      margin-top: 0.2rem;
+    }
+    .pb250-sub-divider {
+      display: inline-block;
+      width: 1px;
+      height: 0.75em;
+      background: #9ca3af;
+      margin: 0 0.55rem;
+      vertical-align: middle;
+      flex-shrink: 0;
+    }
+    .pb250-sub-red { color: #b91c1c; font-weight: 800; }
+
+    /* ── Right: CTA button + close ── */
+    .pb250-right {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 0.875rem 0.4rem 0.5rem;
+      flex-shrink: 0;
+    }
+    .pb250-cta {
+      display: inline-block;
+      background: #b91c1c;
+      color: #fff;
+      font-family: var(--f-head);
+      font-size: clamp(0.65rem, 1.1vw, 0.78rem);
+      font-weight: 800;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding: 0.52rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      white-space: nowrap;
+      box-shadow: 0 2px 6px rgba(185,28,28,0.3);
+      transition: background 0.18s, box-shadow 0.18s, transform 0.12s;
+    }
+    .pb250-cta:hover {
+      background: #991b1b;
+      box-shadow: 0 4px 12px rgba(185,28,28,0.4);
+      transform: translateY(-1px);
+    }
+    .pb250-close {
+      background: none;
+      border: none;
+      color: #1e3a5f;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1;
+      cursor: pointer;
+      padding: 0.2rem 0.15rem;
+      flex-shrink: 0;
+      opacity: 0.55;
+      transition: opacity 0.15s;
+    }
+    .pb250-close:hover { opacity: 1; }
+
+    /* ── Tablet ── */
+    @media (max-width: 900px) {
+      .pb250-accent { width: 84px; }
+      .pb250-headline { white-space: normal; }
+    }
+
+    /* ── Mobile: stack center content, keep single CTA row ── */
+    @media (max-width: 640px) {
+      .pb250-wrap { padding: 4px 6px; }
+      .pb250-accent { display: none; }
+      .pb250-inner { border-radius: 8px; min-height: unset; }
+      .pb250-center { padding: 0.5rem 0.75rem; }
+      .pb250-headline {
+        font-size: 0.78rem;
+        white-space: normal;
+        line-height: 1.2;
+      }
+      .pb250-subtext {
+        flex-direction: column;
+        gap: 0.1rem;
+        margin-top: 0.25rem;
+        font-size: 0.6rem;
+      }
+      .pb250-sub-divider { display: none; }
+      .pb250-right { padding: 0.5rem 0.75rem; }
+      .pb250-cta {
+        font-size: 0.72rem;
+        padding: 0.5rem 0.875rem;
+      }
+    }
+  </style>
+
+  <div class="pb250-wrap" id="americas250PromoBar" role="region" aria-label="Limited-time America's 250 promotion" style="display:none;">
+    <div class="pb250-inner">
+
+      <!-- Patriotic left accent: CSS-rendered flag slice (stripes + canton + stars via pseudo-elements) -->
+      <div class="pb250-accent" aria-hidden="true"></div>
+
+      <!-- Headline + subtext -->
+      <div class="pb250-center">
+        <div class="pb250-headline" aria-label="America's 250 Customer Appreciation Event">
+          <span class="pb250-red">America's 250</span>&thinsp;<span class="pb250-navy">Customer Appreciation Event</span>
+        </div>
+        <div class="pb250-subtext" aria-label="Save $250 on tree service projects of $1,000 or more. Previous estimates and new projects qualify. Offer ends July 31.">
+          <span>Save <span class="pb250-sub-red">$250</span> on Tree Service Projects of $1,000+</span>
+          <span class="pb250-sub-divider" aria-hidden="true"></span>
+          <span>Previous Estimates &amp; New Projects Qualify</span>
+          <span class="pb250-sub-divider" aria-hidden="true"></span>
+          <span>Offer Ends <span class="pb250-sub-red">July&nbsp;31</span></span>
+        </div>
+      </div>
+
+      <!-- CTA + close -->
+      <div class="pb250-right">
+        <a href="/americas-250/" class="pb250-cta" aria-label="Get my $250 off — view the America's 250 offer">Get My $250 Off</a>
+        <button class="pb250-close" id="americas250PromoClose" aria-label="Dismiss promotion">&#x2715;</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      var BAR_KEY = 'pa_americas250_dismissed';
+      var bar      = document.getElementById('americas250PromoBar');
+      var closeBtn = document.getElementById('americas250PromoClose');
+      if (!bar) return;
+      try {
+        var ts = localStorage.getItem(BAR_KEY);
+        if (!ts || Date.now() > parseInt(ts, 10)) {
+          bar.style.display = '';
+        }
+      } catch(e) {
+        bar.style.display = '';
+      }
+      if (closeBtn) {
+        closeBtn.addEventListener('click', function() {
+          bar.style.display = 'none';
+          try {
+            localStorage.setItem(BAR_KEY, Date.now() + (30 * 24 * 60 * 60 * 1000));
+          } catch(e) {}
+        });
+      }
+    })();
+  </script>
+
   <main>
 
     <!-- ============================================================
