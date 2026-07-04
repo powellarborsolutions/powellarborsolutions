@@ -77,6 +77,13 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Campaign / Landing pages -->
+  <url>
+    <loc>https://www.powellarborsolutions.com/americas-250/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Service areas index -->
   <url>
     <loc>https://www.powellarborsolutions.com/service-areas/</loc>
