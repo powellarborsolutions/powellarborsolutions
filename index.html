@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MFW72BC3');</script>
+<!-- End Google Tag Manager -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -335,6 +342,10 @@
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFW72BC3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
   <!-- ============================================================
        ANNOUNCEMENT BAR
@@ -1263,141 +1274,4 @@
         </div>
 
         <div class="footer-col">
-          <h4>Company</h4>
-          <ul class="footer-links">
-            <li><a href="/about/">About David Powell</a></li>
-            <li><a href="/financing/">Financing</a></li>
-            <li><a href="/">Home</a></li>
-            <li><a href="https://www.google.com/maps/place/Powell+Arbor+Solutions/data=!4m2!3m1!1s0x0:0x9e016b03ceca19ae?sa=X&ved=1t:2428&ictx=111" target="_blank" rel="noopener noreferrer">Google Maps</a></li>
-          </ul>
-          <div style="margin-top:1.5rem;">
-            <div style="color:rgba(255,255,255,0.5); font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; font-family:var(--f-head); font-weight:700; margin-bottom:0.5rem;">Service Area</div>
-            <div style="color:rgba(255,255,255,0.65); font-size:0.875rem; line-height:1.6;">Grass Valley, CA<br>and surrounding Nevada &amp; Placer County communities</div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; <span id="currentYear"></span> Powell Arbor Solutions. All rights reserved.</p>
-        <div class="footer-licenses">
-          <span>CA Contractor's License #999635</span>
-          <span>ISA Certified Arborist #WE-8944A</span>
-          <span>Fully Insured</span>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-<!-- Mobile Sticky CTA -->
-<div class="sticky-mobile-cta" aria-label="Quick action bar" role="complementary">
-  <div class="sticky-mobile-cta-inner">
-    <a href="tel:+15308891209" class="btn btn-cta" aria-label="Call Powell Arbor Solutions">
-      Call Now
-    </a>
-    <a href="/contact/#request-estimate" class="btn btn-green" aria-label="Get a free estimate">
-      Free Estimate
-    </a>
-  </div>
-</div>
-
-<!-- =========================
-     JavaScript
-     ========================= -->
-  <!-- Swiper JS (must load before init code) -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-    const menuBtn   = document.getElementById('mobileMenuBtn');
-    const menuClose = document.getElementById('mobileMenuClose');
-    const navPanel  = document.getElementById('mobileNavPanel');
-    const overlay   = document.getElementById('mobileNavOverlay');
-
-    function openNav() {
-      navPanel.classList.add('active');
-      overlay.classList.add('active');
-      document.body.style.overflow = 'hidden';
-      menuBtn.setAttribute('aria-expanded', 'true');
-      navPanel.removeAttribute('aria-hidden');
-    }
-
-    function closeNav() {
-      navPanel.classList.remove('active');
-      overlay.classList.remove('active');
-      document.body.style.overflow = '';
-      menuBtn.setAttribute('aria-expanded', 'false');
-      navPanel.setAttribute('aria-hidden', 'true');
-    }
-
-    if (menuBtn && menuClose && navPanel && overlay) {
-      menuBtn.addEventListener('click', openNav);
-      menuClose.addEventListener('click', closeNav);
-      overlay.addEventListener('click', closeNav);
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && navPanel.classList.contains('active')) closeNav();
-      });
-      navPanel.querySelectorAll('a').forEach(function (link) {
-        link.addEventListener('click', closeNav);
-      });
-    }
-
-    const siteNav = document.querySelector('.site-nav');
-    if (siteNav) {
-      window.addEventListener('scroll', function () {
-        siteNav.style.boxShadow = window.scrollY > 10
-          ? '0 2px 16px rgba(0,0,0,0.1)'
-          : 'var(--shadow-sm)';
-      }, { passive: true });
-    }
-
-    // FAQ accordion
-    document.querySelectorAll('.faq-question').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        var answer = this.nextElementSibling;
-        var isOpen = this.classList.contains('open');
-        document.querySelectorAll('.faq-question.open').forEach(function(openBtn) {
-          openBtn.classList.remove('open');
-          openBtn.setAttribute('aria-expanded', 'false');
-          if (openBtn.nextElementSibling) openBtn.nextElementSibling.classList.remove('open');
-        });
-        if (!isOpen) {
-          this.classList.add('open');
-          this.setAttribute('aria-expanded', 'true');
-          if (answer) answer.classList.add('open');
-        }
-      });
-    });
-
-    // Swiper carousel init
-    new Swiper('.project-gallery', {
-      loop: true,
-      autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        dynamicBullets: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      slidesPerView: 1,
-      spaceBetween: 10,
-      breakpoints: {
-        640:  { slidesPerView: 2, spaceBetween: 14 },
-        1024: { slidesPerView: 3, spaceBetween: 20 },
-      },
-      grabCursor: true,
-      keyboard: { enabled: true },
-      a11y: { enabled: true },
-    });
-
-  </script>
-
-</body>
-</html>
+   
