@@ -114,6 +114,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   height: auto;
 }
 
+/* ── Swiper branded navigation arrows ── */
+.project-gallery .swiper-button-prev,
+.project-gallery .swiper-button-next {
+  --swiper-navigation-size: 18px;
+  width: 42px;
+  height: 42px;
+  margin-top: -21px;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 50%;
+  color: #fff;
+  transition: background 0.2s ease;
+}
+.project-gallery .swiper-button-prev  { left: 18px; }
+.project-gallery .swiper-button-next  { right: 18px; left: auto; }
+.project-gallery .swiper-button-prev:hover,
+.project-gallery .swiper-button-next:hover {
+  background: #F58220;
+}
+
     /* About / Trust section */
     .about-section {
       background: var(--c-white);
