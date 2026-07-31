@@ -4,6 +4,16 @@ A running log of website changes, SEO actions, marketing campaigns, and platform
 
 ---
 
+## 2026-07-31
+
+### Promotion Removal — America's 250
+- Removed America's 250 promo banner, CSS, and JS from homepage (`index.html`)
+- Deleted `/americas-250/` landing page entirely
+- Removed `/americas-250/` entry from `sitemap.xml`
+- Added 301 redirects in `netlify.toml` for `/americas-250` and `/americas-250/` → `/`
+
+---
+
 ## 2026-07-08
 
 ### Repository & Infrastructure
@@ -18,31 +28,6 @@ A running log of website changes, SEO actions, marketing campaigns, and platform
 - Linked Google Analytics to Google Ads
 - Verified Google Search Console ownership
 - Submitted sitemap to Google Search Console (`/sitemap.xml`)
-
----
-
-## 2026-07-04
-
-### America's 250 Promotion
-- Fixed America's 250 landing page promotional wording (removed duplicate "US"/"U.S." phrasing)
-- Updated promo heading to "America's 250 Customer Appreciation Event"
-- Updated hero badge — replaced flag emoji with star character to prevent fallback rendering issues
-- Removed yellow/gold accent colors; updated to clean red/white/blue campaign palette
-
----
-
-## 2026-07-04 (earlier)
-
-### America's 250 Promotion
-- Enhanced America's 250 promotional banner on homepage
-- Launched America's 250 promotional campaign homepage integration
-
----
-
-## 2026-07-04 (earlier)
-
-### America's 250 Promotion
-- Created America's 250 promotional landing page (`/americas-250/`)
 
 ---
 
