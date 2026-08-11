@@ -1,40 +1,142 @@
 [build]
   publish = "."
 
-# Trailing-slash redirects for clean directory URLs
+# ============================================================
+# HTTPS + WWW ENFORCEMENT
+# Preferred canonical domain: https://www.powellarborsolutions.com
+# ============================================================
+[[redirects]]
+  from = "http://powellarborsolutions.com/*"
+  to   = "https://www.powellarborsolutions.com/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "http://www.powellarborsolutions.com/*"
+  to   = "https://www.powellarborsolutions.com/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "https://powellarborsolutions.com/*"
+  to   = "https://www.powellarborsolutions.com/:splat"
+  status = 301
+  force  = true
+
+# ============================================================
+# /index.html → clean URL
+# ============================================================
+[[redirects]]
+  from = "/index.html"
+  to   = "/"
+  status = 301
+  force  = true
+
+# ============================================================
+# CORE DIRECTORY PAGES — /index.html variants and no-slash
+# ============================================================
+[[redirects]]
+  from = "/about/index.html"
+  to   = "/about/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/contact/index.html"
+  to   = "/contact/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/financing/index.html"
+  to   = "/financing/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/service-areas/index.html"
+  to   = "/service-areas/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/services/index.html"
+  to   = "/services/"
+  status = 301
+  force  = true
+
+# Trailing-slash redirects for clean directory URLs (non-.html section landing pages)
 [[redirects]]
   from = "/services"
-  to = "/services/"
+  to   = "/services/"
   status = 301
-  force = false
+  force  = false
 
 [[redirects]]
   from = "/service-areas"
-  to = "/service-areas/"
+  to   = "/service-areas/"
   status = 301
-  force = false
+  force  = false
 
 [[redirects]]
   from = "/about"
-  to = "/about/"
+  to   = "/about/"
   status = 301
-  force = false
+  force  = false
 
 [[redirects]]
   from = "/contact"
-  to = "/contact/"
+  to   = "/contact/"
   status = 301
-  force = false
+  force  = false
 
-# Retired campaign page — redirect to homepage
+[[redirects]]
+  from = "/financing"
+  to   = "/financing/"
+  status = 301
+  force  = false
+
+# ============================================================
+# SERVICE PAGES — extensionless and trailing-slash → canonical .html
+# ============================================================
+[[redirects]]
+  from = "/services/:slug/"
+  to   = "/services/:slug.html"
+  status = 301
+  force  = false
+
+[[redirects]]
+  from = "/services/:slug"
+  to   = "/services/:slug.html"
+  status = 301
+  force  = false
+
+# ============================================================
+# SERVICE-AREA PAGES — extensionless and trailing-slash → canonical .html
+# ============================================================
+[[redirects]]
+  from = "/service-areas/:slug/"
+  to   = "/service-areas/:slug.html"
+  status = 301
+  force  = false
+
+[[redirects]]
+  from = "/service-areas/:slug"
+  to   = "/service-areas/:slug.html"
+  status = 301
+  force  = false
+
+# ============================================================
+# RETIRED CAMPAIGN PAGES
+# ============================================================
 [[redirects]]
   from = "/americas-250"
-  to = "/"
+  to   = "/"
   status = 301
-  force = true
+  force  = true
 
 [[redirects]]
   from = "/americas-250/"
-  to = "/"
+  to   = "/"
   status = 301
-  force = true
+  force  = true

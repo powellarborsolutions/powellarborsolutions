@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Disallow non-canonical .html file variants for directory-style pages
+Disallow: /index.html
+Disallow: /about/index.html
+Disallow: /contact/index.html
+Disallow: /financing/index.html
+Disallow: /services/index.html
+Disallow: /service-areas/index.html
+
+# Disallow build artifacts and non-indexable assets
+Disallow: /*.zip$
+
+Sitemap: https://www.powellarborsolutions.com/sitemap.xml
