@@ -1,6 +1,10 @@
 [build]
   publish = "."
 
+# Serverless functions (live Google rating/review count — see CHANGELOG 2026-10-05)
+[functions]
+  directory = "netlify/functions"
+
 # Trailing-slash redirects for clean directory URLs
 [[redirects]]
   from = "/services"
@@ -51,3 +55,201 @@
   to = "/el-nino-tree-preparation/"
   status = 301
   force = false
+
+# Legacy .html URLs -> clean extensionless URLs (the canonical format).
+# Netlify serves /dir/page.html at /dir/page automatically; these forced 301s make
+# the clean URL the only indexable version. Keep in sync with sitemap.xml.
+[[redirects]]
+  from = "/service-areas/alta-sierra-tree-service.html"
+  to = "/service-areas/alta-sierra-tree-service"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/applegate-tree-service.html"
+  to = "/service-areas/applegate-tree-service"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/auburn-tree-service.html"
+  to = "/service-areas/auburn-tree-service"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/cedar-ridge-tree-service.html"
+  to = "/service-areas/cedar-ridge-tree-service"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/chicago-park-tree-service.html"
+  to = "/service-areas/chicago-park-tree-service"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/christian-valley-tree-service.html"
+  to = "/service-areas/christian-valley-tree-service"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/colfax-tree-service.html"
+  to = "/service-areas/colfax-tree-service"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/grass-valley-tree-service.html"
+  to = "/service-areas/grass-valley-tree-service"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/lake-of-the-pines-tree-service.html"
+  to = "/service-areas/lake-of-the-pines-tree-service"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/lake-wildwood-tree-service.html"
+  to = "/service-areas/lake-wildwood-tree-service"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/meadow-vista-tree-service.html"
+  to = "/service-areas/meadow-vista-tree-service"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/nevada-city-tree-service.html"
+  to = "/service-areas/nevada-city-tree-service"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/north-san-juan-tree-service.html"
+  to = "/service-areas/north-san-juan-tree-service"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/penn-valley-tree-service.html"
+  to = "/service-areas/penn-valley-tree-service"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/rough-and-ready-tree-service.html"
+  to = "/service-areas/rough-and-ready-tree-service"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/truckee-tree-service.html"
+  to = "/service-areas/truckee-tree-service"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/arborist-reports.html"
+  to = "/services/arborist-reports"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/defensible-space.html"
+  to = "/services/defensible-space"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/emergency-tree-service.html"
+  to = "/services/emergency-tree-service"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/plant-health-care.html"
+  to = "/services/plant-health-care"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/storm-damage-cleanup.html"
+  to = "/services/storm-damage-cleanup"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/stump-grinding.html"
+  to = "/services/stump-grinding"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/tree-planting.html"
+  to = "/services/tree-planting"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/tree-removal.html"
+  to = "/services/tree-removal"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/tree-trimming.html"
+  to = "/services/tree-trimming"
+  status = 301
+  force = true
+
+# Duplicate /index.html URLs -> canonical directory URLs (live check 2026-10-05:
+# Netlify served these as 200 duplicates). Only the exact /index.html paths match,
+# so requests for the canonical "/" or "/dir/" URLs are never redirected (no loop).
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about/index.html"
+  to = "/about/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact/index.html"
+  to = "/contact/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/financing/index.html"
+  to = "/financing/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/index.html"
+  to = "/services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/index.html"
+  to = "/service-areas/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/el-nino-tree-preparation/index.html"
+  to = "/el-nino-tree-preparation/"
+  status = 301
+  force = true

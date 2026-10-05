@@ -40,47 +40,47 @@
 
   <!-- Service pages -->
   <url>
-    <loc>https://powellarborsolutions.com/services/tree-removal.html</loc>
+    <loc>https://powellarborsolutions.com/services/tree-removal</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://powellarborsolutions.com/services/tree-trimming.html</loc>
+    <loc>https://powellarborsolutions.com/services/tree-trimming</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://powellarborsolutions.com/services/emergency-tree-service.html</loc>
+    <loc>https://powellarborsolutions.com/services/emergency-tree-service</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://powellarborsolutions.com/services/stump-grinding.html</loc>
+    <loc>https://powellarborsolutions.com/services/stump-grinding</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://powellarborsolutions.com/services/defensible-space.html</loc>
+    <loc>https://powellarborsolutions.com/services/defensible-space</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://powellarborsolutions.com/services/arborist-reports.html</loc>
+    <loc>https://powellarborsolutions.com/services/arborist-reports</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://powellarborsolutions.com/services/tree-planting.html</loc>
+    <loc>https://powellarborsolutions.com/services/tree-planting</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://powellarborsolutions.com/services/plant-health-care.html</loc>
+    <loc>https://powellarborsolutions.com/services/plant-health-care</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://powellarborsolutions.com/services/storm-damage-cleanup.html</loc>
+    <loc>https://powellarborsolutions.com/services/storm-damage-cleanup</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -94,82 +94,82 @@
 
   <!-- City / service area pages -->
   <url>
-    <loc>https://powellarborsolutions.com/service-areas/grass-valley-tree-service.html</loc>
+    <loc>https://powellarborsolutions.com/service-areas/grass-valley-tree-service</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://powellarborsolutions.com/service-areas/auburn-tree-service.html</loc>
+    <loc>https://powellarborsolutions.com/service-areas/auburn-tree-service</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://powellarborsolutions.com/service-areas/nevada-city-tree-service.html</loc>
+    <loc>https://powellarborsolutions.com/service-areas/nevada-city-tree-service</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://powellarborsolutions.com/service-areas/penn-valley-tree-service.html</loc>
+    <loc>https://powellarborsolutions.com/service-areas/penn-valley-tree-service</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://powellarborsolutions.com/service-areas/alta-sierra-tree-service.html</loc>
+    <loc>https://powellarborsolutions.com/service-areas/alta-sierra-tree-service</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://powellarborsolutions.com/service-areas/lake-wildwood-tree-service.html</loc>
+    <loc>https://powellarborsolutions.com/service-areas/lake-wildwood-tree-service</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://powellarborsolutions.com/service-areas/lake-of-the-pines-tree-service.html</loc>
+    <loc>https://powellarborsolutions.com/service-areas/lake-of-the-pines-tree-service</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://powellarborsolutions.com/service-areas/colfax-tree-service.html</loc>
+    <loc>https://powellarborsolutions.com/service-areas/colfax-tree-service</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://powellarborsolutions.com/service-areas/meadow-vista-tree-service.html</loc>
+    <loc>https://powellarborsolutions.com/service-areas/meadow-vista-tree-service</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://powellarborsolutions.com/service-areas/applegate-tree-service.html</loc>
+    <loc>https://powellarborsolutions.com/service-areas/applegate-tree-service</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://powellarborsolutions.com/service-areas/rough-and-ready-tree-service.html</loc>
+    <loc>https://powellarborsolutions.com/service-areas/rough-and-ready-tree-service</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://powellarborsolutions.com/service-areas/chicago-park-tree-service.html</loc>
+    <loc>https://powellarborsolutions.com/service-areas/chicago-park-tree-service</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://powellarborsolutions.com/service-areas/christian-valley-tree-service.html</loc>
+    <loc>https://powellarborsolutions.com/service-areas/christian-valley-tree-service</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://powellarborsolutions.com/service-areas/cedar-ridge-tree-service.html</loc>
+    <loc>https://powellarborsolutions.com/service-areas/cedar-ridge-tree-service</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://powellarborsolutions.com/service-areas/north-san-juan-tree-service.html</loc>
+    <loc>https://powellarborsolutions.com/service-areas/north-san-juan-tree-service</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://powellarborsolutions.com/service-areas/truckee-tree-service.html</loc>
+    <loc>https://powellarborsolutions.com/service-areas/truckee-tree-service</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

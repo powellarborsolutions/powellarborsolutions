@@ -6,6 +6,18 @@ A running log of website changes, SEO actions, marketing campaigns, and platform
 
 ## 2026-10-05
 
+### Live Google Reviews, Clean URLs & Content Accuracy
+- **Live Google rating/review count:** homepage trust indicators ("5.0 Rating on Google / Based on N Reviews" in the trust bar and the reviews-section summary) now load from the Netlify function `netlify/functions/google-reviews-summary.mjs` → `/.netlify/functions/google-reviews-summary` (returns only `{ "rating", "reviewCount" }`). Uses Google Places API (New) Place Details with field mask `rating,userRatingCount`; response cached on Netlify's CDN (~6 h). Curated testimonial cards unchanged.
+  - **Netlify environment variables required** (Site configuration → Environment variables): `GOOGLE_PLACES_API_KEY` (key from a Google Cloud project with **Places API (New)** enabled — restrict the key to that API) and `GOOGLE_PLACE_ID` (Powell Arbor Solutions' Google Place ID). Never commit either value.
+  - Static fallback updated from `38+` to `58+`; it stays visible if the function is unconfigured or Google is unavailable.
+- **Clean URLs:** all service and service-area pages now use extensionless canonical URLs (e.g. `/service-areas/grass-valley-tree-service`). Updated canonical tags, `og:url`, sitemap entries and internal links site-wide; added 25 forced 301 redirects in `netlify.toml` from each legacy `.html` URL to its clean URL. Directory hub pages (`/services/`, `/service-areas/`, etc.) unchanged.
+- **Grass Valley SRA wording:** no longer states every Grass Valley property is in the State Responsibility Area — now refers to many properties in the unincorporated areas surrounding Grass Valley.
+- **Sudden Oak Death wording:** removed claims implying SOD is a confirmed Nevada/Placer County issue and the incorrect beetle/PSHB-vector and February–June pruning-window statements (Grass Valley, Auburn, Penn Valley, Plant Health Care, Tree Trimming). SOD is now described as a California forest-health concern with confirmed natural infestations concentrated elsewhere in the state.
+- **Goldspotted oak borer wording:** removed the claim that GSOB has been found in El Dorado and Placer Counties and GSOB as a listed local cause of oak decline (Penn Valley, Plant Health Care); GSOB is now described only as an invasive pest elsewhere in California.
+- **SRA wording (service-area pages):** replaced absolute "X is in the State Responsibility Area" statements with "many properties in and around X are located within the SRA" and tied defensible-space requirements to properties within the SRA (Alta Sierra, Applegate, Cedar Ridge, Chicago Park, Christian Valley, Colfax, Lake of the Pines, Lake Wildwood, Meadow Vista, North San Juan, Penn Valley, Rough and Ready).
+- **ISA credential wording:** Penn Valley and Alta Sierra no longer say ISA certification is "required" for defensible space; now "professional expertise for tree assessments, defensible-space planning, and written arborist reports".
+- **Duplicate `/index.html` URLs:** live check showed `/index.html`, `/about/index.html`, etc. returned 200 duplicates; added forced 301s to `/`, `/about/`, `/contact/`, `/financing/`, `/services/`, `/service-areas/` and `/el-nino-tree-preparation/`.
+
 ### Seasonal Campaign — 2026–27 El Niño / Winter Storm Preparedness
 - Added El Niño storm-preparedness feature section to homepage (`index.html`), between the trust bar and "Meet David Powell"; reuses the existing Swiper library and gallery arrow styling for a 3-photo storm-response carousel
 - Added landing page `/el-nino-tree-preparation/` (`el-nino-tree-preparation/index.html`) with WebPage, BreadcrumbList and Service schema
