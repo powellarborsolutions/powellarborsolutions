@@ -4,6 +4,19 @@ A running log of website changes, SEO actions, marketing campaigns, and platform
 
 ---
 
+## 2026-10-05
+
+### Seasonal Campaign — 2026–27 El Niño / Winter Storm Preparedness
+- Added El Niño storm-preparedness feature section to homepage (`index.html`), between the trust bar and "Meet David Powell"; reuses the existing Swiper library and gallery arrow styling for a 3-photo storm-response carousel
+- Added landing page `/el-nino-tree-preparation/` (`el-nino-tree-preparation/index.html`) with WebPage, BreadcrumbList and Service schema
+- Added 6 real Powell storm-response photos (web-optimized JPG + WebP, responsive sizes) as `images/storm-*`, plus `images/storm-og-1200x630.jpg` for social sharing
+- Added `/el-nino-tree-preparation/` to `sitemap.xml`
+- Added trailing-slash redirect for `/el-nino-tree-preparation` in `netlify.toml`
+- Cites NOAA CPC ENSO Diagnostic Discussion (Sept 10, 2026) and Cal OES state-of-emergency announcement (Sept 21, 2026) — review copy after each monthly NOAA update
+- To retire after the season: remove the homepage section + its carousel script, then redirect the landing page
+
+---
+
 ## 2026-07-31
 
 ### Promotion Removal — America's 250

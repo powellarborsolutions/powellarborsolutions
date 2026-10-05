@@ -23,6 +23,14 @@
     <priority>0.5</priority>
   </url>
 
+  <!-- Seasonal campaign: 2026-27 El Nino storm preparedness -->
+  <url>
+    <loc>https://powellarborsolutions.com/el-nino-tree-preparation/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Services index -->
   <url>
     <loc>https://powellarborsolutions.com/services/</loc>

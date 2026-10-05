@@ -44,3 +44,10 @@
   to = "/financing/"
   status = 301
   force = false
+
+# Seasonal campaign page (2026-27 El Nino storm preparedness)
+[[redirects]]
+  from = "/el-nino-tree-preparation"
+  to = "/el-nino-tree-preparation/"
+  status = 301
+  force = false

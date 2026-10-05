@@ -116,7 +116,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 /* ── Swiper branded navigation arrows ── */
 .project-gallery .swiper-button-prev,
-.project-gallery .swiper-button-next {
+.project-gallery .swiper-button-next,
+.elnino-carousel .swiper-button-prev,
+.elnino-carousel .swiper-button-next {
   --swiper-navigation-size: 18px;
   width: 42px;
   height: 42px;
@@ -126,10 +128,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   color: #fff;
   transition: background 0.2s ease;
 }
-.project-gallery .swiper-button-prev  { left: 18px; }
-.project-gallery .swiper-button-next  { right: 18px; left: auto; }
+.project-gallery .swiper-button-prev,
+.elnino-carousel .swiper-button-prev  { left: 18px; }
+.project-gallery .swiper-button-next,
+.elnino-carousel .swiper-button-next  { right: 18px; left: auto; }
 .project-gallery .swiper-button-prev:hover,
-.project-gallery .swiper-button-next:hover {
+.project-gallery .swiper-button-next:hover,
+.elnino-carousel .swiper-button-prev:hover,
+.elnino-carousel .swiper-button-next:hover {
   background: #F58220;
 }
 
@@ -235,6 +241,72 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       display: flex;
       align-items: center;
       margin-top: -0.25rem;
+    }
+    /* ── 2026–27 El Niño storm-preparedness feature (seasonal) ── */
+    .elnino-feature-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+      grid-template-areas: "head media" "body media";
+      column-gap: var(--sp-xl);
+      align-items: center;
+    }
+    .elnino-feature-head { grid-area: head; align-self: end; }
+    .elnino-feature-body { grid-area: body; align-self: start; }
+    .elnino-feature-media { grid-area: media; min-width: 0; }
+    .elnino-feature-head h2 { margin-bottom: 1rem; }
+    .elnino-feature-head h2 span { display: block; }
+    .elnino-feature-body p {
+      color: var(--c-gray-600);
+      font-size: 1.0625rem;
+      margin-bottom: 1.25rem;
+    }
+    .elnino-feature-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1.75rem 0 1.5rem;
+    }
+    .elnino-feature .why-credentials { margin-bottom: 0; }
+    .elnino-carousel {
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      background: var(--c-charcoal);
+      touch-action: pan-y;
+    }
+    .elnino-carousel picture,
+    .elnino-carousel img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+    .elnino-carousel .swiper-pagination-bullet { background: #fff; opacity: 0.6; }
+    .elnino-carousel .swiper-pagination-bullet-active { background: var(--c-orange); opacity: 1; }
+    .elnino-caption {
+      margin-top: 0.75rem;
+      font-size: 0.8125rem;
+      color: var(--c-gray-500);
+      max-width: none;
+    }
+    @media (max-width: 900px) {
+      .elnino-feature-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: "head" "media" "body";
+        row-gap: 1.5rem;
+      }
+      .elnino-carousel picture,
+      .elnino-carousel img { aspect-ratio: 16 / 10; }
+    }
+    @media (max-width: 600px) {
+      .elnino-carousel picture,
+      .elnino-carousel img { aspect-ratio: 4 / 3; }
+      .elnino-feature-head h2 span { display: inline; }
+      .elnino-feature-ctas { flex-direction: column; }
+      .elnino-feature-ctas .btn { width: 100%; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .elnino-feature .btn-cta { animation: none; }
     }
   </style>
 
@@ -559,6 +631,78 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div>
+
+    <!-- ============================================================
+         SEASONAL — 2026–27 EL NIÑO / WINTER STORM PREPAREDNESS
+         Links to /el-nino-tree-preparation/. Remove after the season.
+         ============================================================ -->
+    <section class="section section--light elnino-feature" aria-labelledby="elnino-heading">
+      <div class="container">
+        <div class="elnino-feature-grid">
+
+          <div class="elnino-feature-head">
+            <span class="section-label">2026&ndash;27 Winter Storm Preparedness</span>
+            <h2 id="elnino-heading"><span>El&nbsp;Ni&ntilde;o Is Strengthening.</span> <span>Are Your Trees Ready?</span></h2>
+          </div>
+
+          <div class="elnino-feature-media">
+            <div class="swiper elnino-carousel" role="region" aria-label="Real Powell Arbor Solutions storm-response photos">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="images/storm-response-rain-fallen-pine-480.webp 480w, images/storm-response-rain-fallen-pine.webp 687w" sizes="(max-width: 900px) 100vw, 640px" />
+                    <img src="images/storm-response-rain-fallen-pine.jpg" srcset="images/storm-response-rain-fallen-pine-480.jpg 480w, images/storm-response-rain-fallen-pine.jpg 687w" sizes="(max-width: 900px) 100vw, 640px" width="687" height="859" style="object-position: 50% 62%;" alt="Powell Arbor Solutions crew member in a hard hat and safety vest cutting a large fallen pine in front of a home on a rainy evening" loading="lazy" decoding="async" />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="images/storm-fallen-pine-driveway-rain-768.webp 768w, images/storm-fallen-pine-driveway-rain.webp 1536w" sizes="(max-width: 900px) 100vw, 640px" />
+                    <img src="images/storm-fallen-pine-driveway-rain.jpg" srcset="images/storm-fallen-pine-driveway-rain-768.jpg 768w, images/storm-fallen-pine-driveway-rain.jpg 1536w" sizes="(max-width: 900px) 100vw, 640px" width="1536" height="691" style="object-position: 42% 50%;" alt="Large pine fallen across a wet residential driveway in front of a red house during a rainy fall storm" loading="lazy" decoding="async" />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="images/storm-snow-crane-root-plate-600.webp 600w, images/storm-snow-crane-root-plate.webp 1000w" sizes="(max-width: 900px) 100vw, 640px" />
+                    <img src="images/storm-snow-crane-root-plate.jpg" srcset="images/storm-snow-crane-root-plate-600.jpg 600w, images/storm-snow-crane-root-plate.jpg 1000w" sizes="(max-width: 900px) 100vw, 640px" width="1000" height="1333" style="object-position: 50% 58%;" alt="Crane positioned beside a snow-covered home with the exposed root plate of an uprooted tree in the foreground" loading="lazy" decoding="async" />
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev" aria-label="Previous photo"></div>
+              <div class="swiper-button-next" aria-label="Next photo"></div>
+            </div>
+            <p class="elnino-caption">Real storm-response calls handled by Powell Arbor Solutions in the Sierra foothills.</p>
+          </div>
+
+          <div class="elnino-feature-body">
+            <p>Winter storms can expose problems in trees that aren&rsquo;t always obvious during dry weather. Strong winds, saturated soils, heavy rain and snow can increase the consequences of existing defects, deadwood and compromised root systems.</p>
+            <p>Now is the time to identify potential hazards around your home&mdash;before severe weather arrives.</p>
+            <div class="elnino-feature-ctas">
+              <a href="/el-nino-tree-preparation/" id="elnino-home-cta" data-cta="el-nino-homepage" class="btn btn-cta">
+                Prepare for El&nbsp;Ni&ntilde;o
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+              </a>
+              <a href="/contact/#request-estimate" id="elnino-home-estimate" data-cta="el-nino-homepage-estimate" class="btn btn-outline-green">Get a Free Estimate</a>
+            </div>
+            <div class="why-credentials" role="list" aria-label="Credentials">
+              <span class="credential-tag" role="listitem">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                ISA Certified Arborist
+              </span>
+              <span class="credential-tag" role="listitem">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                CA Licensed Contractor #999635
+              </span>
+              <span class="credential-tag" role="listitem">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                Fully Insured
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
     <!-- ============================================================
          ABOUT / TRUST — David Powell portrait + credentials
@@ -1191,6 +1335,34 @@ document.addEventListener('DOMContentLoaded', function () {
     breakpoints: {
       768: { slidesPerView: 2 },
       1024: { slidesPerView: 3 }
+    }
+  });
+});
+</script>
+
+<script>
+// Seasonal El Niño feature carousel — same Swiper library as the project gallery
+document.addEventListener('DOMContentLoaded', function () {
+  if (!document.querySelector('.elnino-carousel') || typeof Swiper === 'undefined') return;
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  new Swiper('.elnino-carousel', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    speed: 700,
+    autoplay: reduceMotion ? false : {
+      delay: 6000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true
+    },
+    grabCursor: true,
+    navigation: {
+      nextEl: '.elnino-carousel .swiper-button-next',
+      prevEl: '.elnino-carousel .swiper-button-prev'
+    },
+    pagination: {
+      el: '.elnino-carousel .swiper-pagination',
+      clickable: true
     }
   });
 });
