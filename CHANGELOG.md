@@ -6,6 +6,15 @@ A running log of website changes, SEO actions, marketing campaigns, and platform
 
 ## 2026-10-09
 
+### Homepage Gallery — New Job Photography & Heading
+- Added 7 new real job photos to the front of the homepage project gallery (`index.html`), in this order: crane-assisted storm removal at a snow-covered home, David limbing a tree, Powell Arbor Solutions crew photo, mini skid steer + chainsaw, Los Gatos before/after (adjacent slides with "Before"/"After" labels), Kayla at the chipper
+- New images are web-optimized and served via `<picture>` (WebP 600w/800w + 800w JPG fallback), lazy-loaded, with explicit dimensions and EXIF/GPS metadata stripped: `images/crane-storm-removal-snow-*`, `images/david-climbing-limbing-tree-*`, `images/powell-arbor-crew-*`, `images/david-skid-steer-chainsaw-*`, `images/los-gatos-before-tree-work-*`, `images/los-gatos-after-tree-work-*`, `images/kayla-chipper-operation-*`
+- Gallery heading changed from "Recent Projects in Nevada & Placer Counties" to "Professional Tree Care in Action" (the section label above it already reads "Our Work") so out-of-area projects (e.g. Los Gatos) fit
+- Removed `auburn-home-and-garden.jpg` from the gallery (blurry); the file itself was not deleted
+- Kept all 25 other existing gallery photos in their original relative order, including `crane-sky-view.jpg`; gallery now has 32 slides
+- Added small gallery CSS for `<picture>` slides and the Before/After label; no changes to Swiper settings or other sections
+- Not added: trailer wood-haul photo and `david.sawdust.jpg`; original full-size phone photos left uncommitted
+
 ### El Niño Campaign — October NOAA Advisory Refresh
 - Updated the NOAA fact on `/el-nino-tree-preparation/` from the Sept 10, 2026 ENSO Diagnostic Discussion to the Oct 8, 2026 discussion: El Niño continues to strengthen; El Niño Advisory remains in effect; strong-to-very strong El Niño likely through January–March 2027 (greater than an 83% chance). Next NOAA update: Nov 12, 2026.
 

@@ -114,6 +114,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   height: auto;
 }
 
+/* Gallery: <picture> wrappers + before/after labels */
+.project-gallery .swiper-slide { position: relative; }
+.project-gallery picture { display: block; }
+.project-gallery .gallery-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  padding: 0.3rem 0.75rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 999px;
+  font-family: var(--f-head);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
 /* ── Swiper branded navigation arrows ── */
 .project-gallery .swiper-button-prev,
 .project-gallery .swiper-button-next,
@@ -941,12 +961,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="container">
         <div class="section-header">
           <span class="section-label">Our Work</span>
-          <h2 id="gallery-heading">Recent Projects in Nevada &amp; Placer Counties</h2>
+          <h2 id="gallery-heading">Professional Tree Care in Action</h2>
           <p>Every job is handled with the same attention to safety, precision, and complete site cleanup — no matter the size or complexity.</p>
         </div>
 
         <div class="swiper project-gallery">
           <div class="swiper-wrapper">
+
+            <!-- Featured: recent job photography (Oct 2026) -->
+            <div class="swiper-slide"><picture><source type="image/webp" srcset="images/crane-storm-removal-snow-600.webp 600w, images/crane-storm-removal-snow-800.webp 800w" sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 400px"><img src="images/crane-storm-removal-snow-800.jpg" width="800" height="1067" style="object-position: 50% 50%;" alt="Powell Arbor Solutions crew performing a crane-assisted tree removal at a snow-covered home after a winter storm" loading="lazy" decoding="async"></picture></div>
+            <div class="swiper-slide"><picture><source type="image/webp" srcset="images/david-climbing-limbing-tree-600.webp 600w, images/david-climbing-limbing-tree-800.webp 800w" sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 400px"><img src="images/david-climbing-limbing-tree-800.jpg" width="800" height="1067" style="object-position: 50% 25%;" alt="ISA Certified Arborist David Powell climbing and limbing a tall tree trunk" loading="lazy" decoding="async"></picture></div>
+            <div class="swiper-slide"><picture><source type="image/webp" srcset="images/powell-arbor-crew-600.webp 600w, images/powell-arbor-crew-800.webp 800w" sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 400px"><img src="images/powell-arbor-crew-800.jpg" width="800" height="1067" style="object-position: 50% 65%;" alt="Powell Arbor Solutions professional tree care crew on the job" loading="lazy" decoding="async"></picture></div>
+            <div class="swiper-slide"><picture><source type="image/webp" srcset="images/david-skid-steer-chainsaw-600.webp 600w, images/david-skid-steer-chainsaw-800.webp 800w" sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 400px"><img src="images/david-skid-steer-chainsaw-800.jpg" width="800" height="1067" style="object-position: 50% 40%;" alt="Mini skid steer with grapple attachment and professional chainsaw on a residential tree job" loading="lazy" decoding="async"></picture></div>
+            <div class="swiper-slide"><span class="gallery-tag">Before</span><picture><source type="image/webp" srcset="images/los-gatos-before-tree-work-600.webp 600w, images/los-gatos-before-tree-work-800.webp 800w" sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 400px"><img src="images/los-gatos-before-tree-work-800.jpg" width="800" height="1067" style="object-position: 50% 45%;" alt="Before tree work: dense tree canopy crowding the back of a Los Gatos home" loading="lazy" decoding="async"></picture></div>
+            <div class="swiper-slide"><span class="gallery-tag">After</span><picture><source type="image/webp" srcset="images/los-gatos-after-tree-work-600.webp 600w, images/los-gatos-after-tree-work-800.webp 800w" sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 400px"><img src="images/los-gatos-after-tree-work-800.jpg" width="800" height="1067" style="object-position: 50% 45%;" alt="After tree work: reduced, opened-up tree canopy behind the same Los Gatos home" loading="lazy" decoding="async"></picture></div>
+            <div class="swiper-slide"><picture><source type="image/webp" srcset="images/kayla-chipper-operation-600.webp 600w, images/kayla-chipper-operation-800.webp 800w" sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 400px"><img src="images/kayla-chipper-operation-800.jpg" width="800" height="1067" style="object-position: 50% 55%;" alt="Powell Arbor Solutions crew member working at the wood chipper on a residential job site" loading="lazy" decoding="async"></picture></div>
 
             <!-- Crane & Large Removal -->
             <div class="swiper-slide"><img src="images/auburn-crane-emergency-tree-removal1.JPG" alt="Crane emergency tree removal in Auburn CA" loading="lazy"></div>
@@ -976,7 +1005,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="swiper-slide"><img src="images/rope-systems-david.jpg" alt="David Powell rope systems technical tree work" loading="lazy"></div>
 
             <!-- Property / Lifestyle -->
-            <div class="swiper-slide"><img src="images/auburn-home-and-garden.jpg" alt="Tree service Auburn home and garden" loading="lazy"></div>
             <div class="swiper-slide"><img src="images/nc-home-and-garden.jpg" alt="Tree service Nevada City home and garden" loading="lazy"></div>
 
             <!-- Team -->
