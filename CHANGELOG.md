@@ -4,6 +4,13 @@ A running log of website changes, SEO actions, marketing campaigns, and platform
 
 ---
 
+## 2026-10-09
+
+### El Niño Campaign — October NOAA Advisory Refresh
+- Updated the NOAA fact on `/el-nino-tree-preparation/` from the Sept 10, 2026 ENSO Diagnostic Discussion to the Oct 8, 2026 discussion: El Niño continues to strengthen; El Niño Advisory remains in effect; strong-to-very strong El Niño likely through January–March 2027 (greater than an 83% chance). Next NOAA update: Nov 12, 2026.
+
+---
+
 ## 2026-10-05
 
 ### Live Google Reviews, Clean URLs & Content Accuracy
