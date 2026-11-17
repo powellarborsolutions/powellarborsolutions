@@ -104,6 +104,53 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .estimate-section > .container > p { margin-bottom: 1.875rem; color: rgba(255,255,255,0.85); font-size: 1.0625rem; }
     .form-wrapper { max-width: 600px; margin: 0 auto; }
     @media (max-width: 768px) { .estimate-section { padding: 3rem 1.25rem; } }
+    /* ── Auburn project showcase (page-scoped) ── */
+    .auburn-project-grid {
+      display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin: 2rem 0 0; padding: 0; list-style: none;
+    }
+    .auburn-project-figure {
+      margin: 0; background: var(--c-white); border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm); border: 1px solid var(--c-gray-200);
+    }
+    .auburn-project-media { position: relative; aspect-ratio: 2 / 3; background: var(--c-gray-100); }
+    .auburn-project-media img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    .auburn-project-tag {
+      position: absolute; top: 12px; left: 12px; padding: .3rem .75rem; background: rgba(0,0,0,.6); color: #fff;
+      border-radius: 999px; font-family: var(--f-head); font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+    }
+    .auburn-project-figure figcaption { padding: .9rem 1rem 1rem; font-size: .95rem; color: var(--c-gray-600); line-height: 1.5; }
+    .auburn-project-figure figcaption strong { display: block; font-family: var(--f-head); color: var(--c-charcoal); font-size: 1rem; margin-bottom: .2rem; }
+
+    .auburn-video-row {
+      display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 280px); gap: 2.5rem; align-items: center;
+      max-width: 880px; margin: 3.5rem auto 0;
+    }
+    .auburn-video-text h3 { margin-bottom: .75rem; }
+    .auburn-video-text p { color: var(--c-gray-600); font-size: 1.0625rem; margin-bottom: 1.25rem; }
+    .auburn-video {
+      position: relative; width: 100%; aspect-ratio: 9 / 16; border-radius: var(--radius-lg); overflow: hidden;
+      background: var(--c-charcoal); box-shadow: var(--shadow-md);
+    }
+    .auburn-video iframe, .auburn-video-play { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    .auburn-video-play { display: block; padding: 0; margin: 0; background: none; cursor: pointer; color: #fff; }
+    .auburn-video-play img { width: 100%; height: 100%; object-fit: cover; display: block; opacity: .9; transition: opacity .2s; }
+    .auburn-video-play:hover img, .auburn-video-play:focus-visible img { opacity: 1; }
+    .auburn-video-play:focus-visible { outline: 3px solid var(--c-orange); outline-offset: -3px; }
+    .auburn-video-icon {
+      position: absolute; top: 50%; left: 50%; width: 68px; height: 68px; margin: -34px 0 0 -34px; border-radius: 50%;
+      background: var(--c-orange); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(0,0,0,.35);
+    }
+    .auburn-video-label {
+      position: absolute; left: 0; right: 0; bottom: 0; padding: 2rem 1rem 1rem; text-align: center;
+      font-family: var(--f-head); font-weight: 700; font-size: .85rem; background: linear-gradient(transparent, rgba(0,0,0,.7));
+    }
+
+    @media (max-width: 900px) {
+      .auburn-video-row { grid-template-columns: 1fr; gap: 1.5rem; text-align: center; }
+      .auburn-video { max-width: 280px; margin: 0 auto; }
+    }
+    @media (max-width: 640px) {
+      .auburn-project-grid { grid-template-columns: 1fr; max-width: 420px; margin-left: auto; margin-right: auto; }
+    }
   </style>
     <!-- Google tag (gtag.js) -->
   <script type="application/ld+json">
@@ -367,6 +414,68 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p>Auburn's tree care challenges are distinct from those found in higher-elevation communities like Grass Valley or Nevada City. At roughly 1,200 feet, Auburn sits in the transition zone between the Central Valley oak savanna and the mixed conifer belt above. This means a unique mix of species — massive Valley Oaks with canopy spreads that can exceed 80 feet, drought-stressed Blue Oaks, and increasingly, established ornamental and residential trees in the older neighborhoods of Old Auburn and the Hillsborough Estates area.</p>
             <p>The American River canyon poses specific challenges for properties on canyon-facing slopes — steep terrain, exposed root systems, and trees that lean toward the canyon due to decades of directional growth. These situations require careful rigging, proper anchorage, and an arborist who has worked in canyon-adjacent conditions before. We have.</p>
             <p>Auburn is also one of the faster-growing communities in Placer County, with significant new residential development in areas like Bell Road Corridor and Lincoln Road. New homeowners on these properties often inherit mature oaks or legacy trees that need assessment, proper pruning, or in some cases, removal to make way for structures or to address hazards created during construction that damaged root zones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECENT PROJECT: AUBURN PINE TREE REMOVAL -->
+    <section class="section section--light" id="auburn-tree-removal-project" aria-labelledby="auburn-project-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Recent Auburn Project</span>
+          <h2 id="auburn-project-heading">Recent Tree Removal Project in Auburn, CA</h2>
+          <p>Take a closer look at a residential tree removal project completed by Powell Arbor Solutions in Auburn, California. This mature pine tree was located near a home, requiring careful climbing, rigging, and controlled removal techniques. These photos highlight the progression of the work and the hands-on experience our crew brings to challenging tree care projects.</p>
+        </div>
+
+        <ul class="auburn-project-grid">
+          <li>
+            <figure class="auburn-project-figure">
+              <div class="auburn-project-media">
+                <img src="../images/auburn-pine-tree-removal-before.webp" width="382" height="510" loading="lazy" decoding="async"
+                     alt="Mature pine tree near a residential home before tree removal in Auburn, California" />
+                <span class="auburn-project-tag" aria-hidden="true">Before</span>
+              </div>
+              <figcaption><strong>Before</strong>A mature pine standing close to the home before work began.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="auburn-project-figure">
+              <div class="auburn-project-media">
+                <img src="../images/auburn-pine-tree-removal-climbing.webp" width="600" height="988" loading="lazy" decoding="async"
+                     alt="Professional arborist performing climbing and rigging work during tree removal in Auburn CA" />
+                <span class="auburn-project-tag" aria-hidden="true">In Progress</span>
+              </div>
+              <figcaption><strong>Work in Progress</strong>Tree climbing and technical rigging in the canopy to remove limbs in controlled sections.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="auburn-project-figure">
+              <div class="auburn-project-media">
+                <img src="../images/auburn-pine-tree-removal-progress.webp" width="600" height="988" loading="lazy" decoding="async"
+                     alt="Standing pine trunk during a residential tree removal project in Auburn California" />
+                <span class="auburn-project-tag" aria-hidden="true">Removal Progress</span>
+              </div>
+              <figcaption><strong>Removal Progress</strong>The standing trunk after the upper branches and sections were taken down.</figcaption>
+            </figure>
+          </li>
+        </ul>
+
+        <div class="auburn-video-row">
+          <div class="auburn-video-text">
+            <h3>Watch the Auburn Tree Removal in Action</h3>
+            <p>Watch our crew at work during this residential pine tree removal project in Auburn, CA. The video offers a closer look at the climbing and removal process involved in professional tree care.</p>
+            <a href="#request-estimate" class="btn btn-green">Get a Free Estimate</a>
+          </div>
+          <div class="auburn-video" data-video-id="yfmeCyADfGE">
+            <a class="auburn-video-play" href="https://youtube.com/shorts/yfmeCyADfGE" target="_blank" rel="noopener"
+               aria-label="Play video: Auburn pine tree removal by Powell Arbor Solutions">
+              <img src="https://i.ytimg.com/vi/yfmeCyADfGE/hqdefault.jpg" width="480" height="360" loading="lazy" decoding="async" alt="" />
+              <span class="auburn-video-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72a1 1 0 001.52.85l10.29-6.86a1 1 0 000-1.7L9.52 4.29A1 1 0 008 5.14z"/></svg>
+              </span>
+              <span class="auburn-video-label" aria-hidden="true">Watch the Short</span>
+            </a>
           </div>
         </div>
       </div>
@@ -699,6 +808,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       });
     });
 
+  </script>
+
+  <!-- Auburn project video: click-to-play (privacy-enhanced YouTube embed) -->
+  <script>
+    document.querySelectorAll('.auburn-video[data-video-id]').forEach(function (wrap) {
+      var link = wrap.querySelector('.auburn-video-play');
+      if (!link) return;
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        var iframe = document.createElement('iframe');
+        iframe.src = 'https://www.youtube-nocookie.com/embed/' + wrap.getAttribute('data-video-id') + '?autoplay=1&rel=0&playsinline=1';
+        iframe.title = 'Auburn pine tree removal by Powell Arbor Solutions';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        iframe.allowFullscreen = true;
+        iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+        wrap.replaceChild(iframe, link);
+        iframe.focus();
+      });
+    });
   </script>
 
 </body>
