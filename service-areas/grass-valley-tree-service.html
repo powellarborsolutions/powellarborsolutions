@@ -147,6 +147,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .form-wrapper { max-width: 600px; margin: 0 auto; }
 
     @media (max-width: 768px) { .estimate-section { padding: 3rem 1.25rem; } }
+    /* ── Grass Valley featured project video (page-scoped) ── */
+    .gv-project-video-wrap { max-width: 860px; margin: 2rem auto 0; }
+    .gv-project-video-intro { text-align: center; color: var(--c-gray-600); font-size: 1.0625rem; margin: 0 auto 1.25rem; max-width: 640px; }
+    .gv-video {
+      position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: var(--radius-lg); overflow: hidden;
+      background: var(--c-charcoal); box-shadow: var(--shadow-md);
+    }
+    .gv-video iframe, .gv-video-play { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    .gv-video-play { display: block; padding: 0; margin: 0; background: none; cursor: pointer; color: #fff; }
+    .gv-video-play img { width: 100%; height: 100%; object-fit: cover; display: block; opacity: .9; transition: opacity .2s; }
+    .gv-video-play:hover img, .gv-video-play:focus-visible img { opacity: 1; }
+    .gv-video-play:focus-visible { outline: 3px solid var(--c-orange); outline-offset: -3px; }
+    .gv-video-icon {
+      position: absolute; top: 50%; left: 50%; width: 72px; height: 72px; margin: -36px 0 0 -36px; border-radius: 50%;
+      background: var(--c-orange); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(0,0,0,.35);
+    }
+    .gv-video-fallback { text-align: center; margin-top: 1rem; font-size: .95rem; color: var(--c-gray-600); }
+    .gv-video-fallback a { color: var(--c-green); font-weight: 600; }
+    @media (max-width: 480px) {
+      .gv-video { border-radius: var(--radius-md); }
+      .gv-video-icon { width: 58px; height: 58px; margin: -29px 0 0 -29px; }
+    }
   </style>
     <!-- Google tag (gtag.js) -->
   <script type="application/ld+json">
@@ -411,6 +433,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p>We're familiar with the specific neighborhoods, HOAs, and terrain throughout Grass Valley — including Brunswick Basin, Loma Rica Ranch, Lake Wildwood areas, Alta Sierra, and properties along Highway 49 toward Nevada City. We understand which species are most vulnerable to beetle infestation during drought years, and we know the pests, pathogens and environmental stresses that affect the area's oaks. Sudden Oak Death (<em>Phytophthora ramorum</em>) is an important California forest-health concern, although confirmed natural infestations are concentrated in other parts of the state — so we base every diagnosis on the tree's actual symptoms, site conditions and a professional evaluation.</p>
             <p>When you hire Powell Arbor Solutions for tree service in Grass Valley, you're getting an arborist who's been working in your specific landscape for over two decades — not a franchise crew dispatched from three counties away.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECT: CRANE-ASSISTED BLACK OAK REMOVAL -->
+    <section class="section section--light" id="grass-valley-black-oak-removal" aria-labelledby="gv-project-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Featured Grass Valley Project</span>
+          <h2 id="gv-project-heading">Crane-Assisted Black Oak Removal in Grass Valley, CA</h2>
+          <p>A black oak with basal rot presented a challenging removal in a confined residential setting in Grass Valley, California. Powell Arbor Solutions partnered with Bragg Crane to coordinate the removal using specialized equipment and technical tree removal methods.</p>
+        </div>
+
+        <div class="gv-project-video-wrap">
+          <p class="gv-project-video-intro">Watch Powell Arbor Solutions and Bragg Crane tackle this challenging black oak removal in Grass Valley, CA.</p>
+          <div class="gv-video" data-video-id="J6CA_6SmB0E">
+            <a class="gv-video-play" href="https://youtu.be/J6CA_6SmB0E" target="_blank" rel="noopener"
+               aria-label="Play video: Crane-assisted black oak removal in Grass Valley, CA">
+              <img src="https://i.ytimg.com/vi/J6CA_6SmB0E/maxresdefault.jpg" width="1280" height="720" loading="lazy" decoding="async" alt="" />
+              <span class="gv-video-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72a1 1 0 001.52.85l10.29-6.86a1 1 0 000-1.7L9.52 4.29A1 1 0 008 5.14z"/></svg>
+              </span>
+            </a>
+          </div>
+          <p class="gv-video-fallback">Having trouble playing the video? <a href="https://youtu.be/J6CA_6SmB0E" target="_blank" rel="noopener">Watch it on YouTube</a>.</p>
         </div>
       </div>
     </section>
@@ -742,6 +789,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       });
     });
 
+  </script>
+
+  <!-- Grass Valley project video: click-to-play (privacy-enhanced YouTube embed) -->
+  <script>
+    document.querySelectorAll('.gv-video[data-video-id]').forEach(function (wrap) {
+      var link = wrap.querySelector('.gv-video-play');
+      if (!link) return;
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        var iframe = document.createElement('iframe');
+        iframe.src = 'https://www.youtube-nocookie.com/embed/' + wrap.getAttribute('data-video-id') + '?autoplay=1&rel=0&playsinline=1';
+        iframe.title = 'Crane-assisted black oak removal in Grass Valley, CA - Powell Arbor Solutions and Bragg Crane';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        iframe.allowFullscreen = true;
+        iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+        wrap.replaceChild(iframe, link);
+        iframe.focus();
+      });
+    });
   </script>
 
 </body>
