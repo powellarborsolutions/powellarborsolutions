@@ -4,6 +4,15 @@ A running log of website changes, SEO actions, marketing campaigns, and platform
 
 ---
 
+## 2026-11-17
+
+### Homepage — Service-Area Links, Tree Planting Link Check & Review Count Fallback
+- **Grass Valley & Auburn features:** added two equal, side-by-side features to "Serving Grass Valley, Auburn & Surrounding Communities" (`index.html`) — "Tree Service in Grass Valley, CA" → `/service-areas/grass-valley-tree-service` and "Tree Service in Auburn, CA" → `/service-areas/auburn-tree-service` — using standard anchor links and the existing `service-link` style; stacks on mobile. Existing Primary / Surrounding / Extended area lists unchanged.
+- **Tree Planting navigation (mobile report):** the homepage card was already correct (only its "View Service" link is clickable; verified with live taps at 412px). The wrong destination came from the Services hub page (`/services/`, reached via the mobile menu), whose Tree Planting card "View Service" link pointed to `/services/` itself, reloading the general "Tree Service" page. Fixed in `services/index.html`. The same self-link existed on three other Services hub cards; all four "View Service" links now go to their dedicated pages: Tree Planting & Installation → `/services/tree-planting`, Plant Health Care → `/services/plant-health-care`, Storm Damage Cleanup → `/services/storm-damage-cleanup`, Stump Grinding & Removal → `/services/stump-grinding`.
+- **Google review count:** live function `/.netlify/functions/google-reviews-summary` confirmed working (returned 5.0 / 68 reviews); both homepage displays already update from it. Updated the static HTML fallback (shown before the live value loads and to crawlers/no-JS) from `58+` to `68+` in both locations and the reviews-summary aria-label. No changes to the function, testimonials or schema.
+
+---
+
 ## 2026-10-09
 
 ### Homepage Gallery — New Job Photography & Heading
