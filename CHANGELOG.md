@@ -6,6 +6,10 @@ A running log of website changes, SEO actions, marketing campaigns, and platform
 
 ## 2026-11-17
 
+### El Niño Campaign — November NOAA Advisory Refresh
+- Updated the NOAA fact on `/el-nino-tree-preparation/` from the Oct 8, 2026 ENSO Diagnostic Discussion to the Nov 12, 2026 discussion: El Niño continues to strengthen; El Niño Advisory remains in effect; strong-to-very strong El Niño likely through January–March 2027 (greater than a 79% chance, down from greater than 83%). Next NOAA update: Dec 10, 2026.
+- Reviewed and left unchanged: homepage El Niño headline/description (still accurate), "What This Doesn't Mean" safety caveat, Cal OES Sept 21, 2026 state-of-emergency reference, page metadata and structured data (no forecast figures).
+
 ### Homepage — Service-Area Links, Tree Planting Link Check & Review Count Fallback
 - **Grass Valley & Auburn features:** added two equal, side-by-side features to "Serving Grass Valley, Auburn & Surrounding Communities" (`index.html`) — "Tree Service in Grass Valley, CA" → `/service-areas/grass-valley-tree-service` and "Tree Service in Auburn, CA" → `/service-areas/auburn-tree-service` — using standard anchor links and the existing `service-link` style; stacks on mobile. Existing Primary / Surrounding / Extended area lists unchanged.
 - **Tree Planting navigation (mobile report):** the homepage card was already correct (only its "View Service" link is clickable; verified with live taps at 412px). The wrong destination came from the Services hub page (`/services/`, reached via the mobile menu), whose Tree Planting card "View Service" link pointed to `/services/` itself, reloading the general "Tree Service" page. Fixed in `services/index.html`. The same self-link existed on three other Services hub cards; all four "View Service" links now go to their dedicated pages: Tree Planting & Installation → `/services/tree-planting`, Plant Health Care → `/services/plant-health-care`, Storm Damage Cleanup → `/services/storm-damage-cleanup`, Stump Grinding & Removal → `/services/stump-grinding`.
